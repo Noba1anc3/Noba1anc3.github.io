@@ -59,7 +59,7 @@ $$
 $$
 
 
-![bbox regression]({{ '/assets/images/RCNN-bbox-regression.png' | relative_url }})
+![bbox regression]({{ '/assets/images/RCNN-bbox-regression.png' }})
 {: style="width: 60%;" class="center"}
 *Fig. 2. Illustration of transformation between predicted and ground truth bounding boxes.*
 
@@ -97,7 +97,7 @@ Greedily select the one with the highest score.
 Skip the remaining boxes with high IoU (i.e. > 0.5) with previously selected one.
 
 
-![Non-max suppression]({{ '/assets/images/non-max-suppression.png' | relative_url }})
+![Non-max suppression]({{ '/assets/images/non-max-suppression.png' }})
 {: class="center"}
 *Fig. 3. Multiple bounding boxes detect the car in the image. After non-maximum suppression, only the best remains and the rest are ignored as they have large overlaps with the selected one. (Image source: [DPM paper](http://lear.inrialpes.fr/~oneata/reading_group/dpm.pdf))*
 
@@ -122,7 +122,7 @@ Looking through the R-CNN learning steps, you could easily find out that trainin
 
 To make R-CNN faster, Girshick ([2015](https://arxiv.org/pdf/1504.08083.pdf)) improved the training procedure by unifying three independent models into one jointly trained framework and increasing shared computation results, named **Fast R-CNN**. Instead of extracting CNN feature vectors independently for each region proposal, this model aggregates them into one CNN forward pass over the entire image and the region proposals share this feature matrix. Then the same feature matrix is branched out to be used for learning the object classifier and the bounding-box regressor. In conclusion, computation sharing speeds up R-CNN.
 
-![Fast R-CNN]({{ '/assets/images/fast-RCNN.png' | relative_url }})
+![Fast R-CNN]({{ '/assets/images/fast-RCNN.png' }})
 {: style="width: 540px;" class="center"}
 *Fig. 4. The architecture of Fast R-CNN. (Image source: [Girshick, 2015](https://arxiv.org/pdf/1504.08083.pdf))*
 
@@ -132,7 +132,7 @@ To make R-CNN faster, Girshick ([2015](https://arxiv.org/pdf/1504.08083.pdf)) im
 It is a type of max pooling to convert features in the projected region of the image of any size, h x w, into a small fixed window, H x W. The input region is divided into H x W grids, approximately every subwindow of size h/H x w/W. Then apply max-pooling in each grid.
 
 
-![RoI pooling]({{ '/assets/images/roi-pooling.png' | relative_url }})
+![RoI pooling]({{ '/assets/images/roi-pooling.png' }})
 {: style="width: 540px;" class="center"}
 *Fig. 5. RoI pooling (Image source: [Stanford CS231n slides](http://cs231n.stanford.edu/slides/2016/winter1516_lecture8.pdf).)*
 
@@ -190,7 +190,7 @@ L_1^\text{smooth}(x) = \begin{cases}
 \end{cases}
 $$
 
-![Smooth L1 loss]({{ '/assets/images/l1-smooth.png' | relative_url }})
+![Smooth L1 loss]({{ '/assets/images/l1-smooth.png' }})
 {: style="width: 240px;" class="center"}
 *Fig. 6. The plot of smooth L1 loss, $$y = L_1^\text{smooth}(x)$$. (Image source: [link](https://github.com/rbgirshick/py-faster-rcnn/files/764206/SmoothL1Loss.1.pdf))*
 
@@ -205,7 +205,7 @@ Fast R-CNN is much faster in both training and testing time. However, the improv
 
 An intuitive speedup solution is to integrate the region proposal algorithm into the CNN model. **Faster R-CNN** ([Ren et al., 2016](https://arxiv.org/pdf/1506.01497.pdf)) is doing exactly this: construct a single, unified model composed of RPN (region proposal network) and fast R-CNN with shared convolutional feature layers.
 
-![Faster R-CNN]({{ '/assets/images/faster-RCNN.png' | relative_url }})
+![Faster R-CNN]({{ '/assets/images/faster-RCNN.png' }})
 {: style="width: 100%;" class="center"}
 *Fig. 7. An illustration of Faster R-CNN model. (Image source: [Ren et al., 2016](https://arxiv.org/pdf/1506.01497.pdf))*
 
@@ -257,14 +257,14 @@ $$
 
 Mask R-CNN ([He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf)) extends Faster R-CNN to pixel-level image segmentation. The key point is to decouple the classification and the pixel-level mask prediction tasks. Based on the framework of [Faster R-CNN](#faster-r-cnn), it added a third branch for predicting an object mask in parallel with the existing branches for classification and localization. The mask branch is a small fully-connected network applied to each RoI, predicting a segmentation mask in a pixel-to-pixel manner.
 
-![Mask R-CNN]({{ '/assets/images/mask-rcnn.png' | relative_url }})
+![Mask R-CNN]({{ '/assets/images/mask-rcnn.png' }})
 {: style="width: 550px;" class="center"}
 *Fig. 8. Mask R-CNN is Faster R-CNN model with image segmentation. (Image source: [He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf))*
 
 Because pixel-level segmentation requires much more fine-grained alignment than bounding boxes, mask R-CNN improves the RoI pooling layer (named "RoIAlign layer") so that RoI can be better and more precisely mapped to the regions of the original image.
 
 
-![Mask R-CNN Examples]({{ '/assets/images/mask-rcnn-examples.png' | relative_url }})
+![Mask R-CNN Examples]({{ '/assets/images/mask-rcnn-examples.png' }})
 {: style="width: 100%;" class="center"}
 *Fig. 9. Predictions by Mask R-CNN on COCO test set. (Image source: [He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf))*
 
@@ -274,7 +274,7 @@ Because pixel-level segmentation requires much more fine-grained alignment than 
 The RoIAlign layer is designed to fix the location misalignment caused by quantization in the RoI pooling. RoIAlign removes the hash quantization, for example, by using x/16 instead of [x/16], so that the extracted features can be properly aligned with the input pixels. [Bilinear interpolation](https://en.wikipedia.org/wiki/Bilinear_interpolation) is used for computing the floating-point location values in the input.
 
 
-![RoI Align]({{ '/assets/images/roi-align.png' | relative_url }})
+![RoI Align]({{ '/assets/images/roi-align.png' }})
 {: style="width: 640px;" class="center"}
 *Fig. 10. A region of interest is mapped **accurately** from the original image onto the feature map without rounding up to integers. (Image source: [link](https://blog.athelas.com/a-brief-history-of-cnns-in-image-segmentation-from-r-cnn-to-mask-r-cnn-34ea83205de4))*
 
@@ -301,19 +301,19 @@ where $$y_{ij}$$ is the label of a cell (i, j) in the true mask for the region o
 
 Here I illustrate model designs of R-CNN, Fast R-CNN, Faster R-CNN and Mask R-CNN. You can track how one model evolves to the next version by comparing the small differences.
 
-![R-CNN family summary]({{ '/assets/images/rcnn-family-summary.png' | relative_url }})
+![R-CNN family summary]({{ '/assets/images/rcnn-family-summary.png' }})
 {: style="width: 100%;" class="center"}
 
 
 ---
 Cited as:
 ```
-@article{weng2017detection3,
-  title   = "Object Detection for Dummies Part 3: R-CNN Family",
-  author  = "Weng, Lilian",
-  journal = "lilianweng.github.io/lil-log",
-  year    = "2017",
-  url     = "http://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html"
+@article{
+  title   = "R-CNN Family",
+  author  = "Zhang, Xuanrui",
+  journal = "noba1anc3.github.io/",
+  year    = "2020",
+  url     = "https://noba1anc3.github.io/2020/04/15/R-CNN-Family.html"
 }
 ```
 
