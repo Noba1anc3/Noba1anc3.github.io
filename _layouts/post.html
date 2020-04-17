@@ -11,13 +11,14 @@
       </time>
 
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        by <span itemprop="name">{{ Zhang Xuanrui }}</span>
+        by Zhang Xuanrui
+<!--         <span itemprop="name">{{ Zhang Xuanrui }}</span> -->
       </span>
 
       <span>
         {% for tag in page.tags %}
           {% capture tag_name %}{{ tag }}{% endcapture %}
-          <a class="post-tag" href="github.com/lilianweng/lil-log/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
+          <a class="post-tag" href="lilianweng.github.io/lil-log/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
         {% endfor %}
       </span>
 
