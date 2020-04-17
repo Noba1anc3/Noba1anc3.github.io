@@ -2,21 +2,11 @@
 layout: post
 ---
 
-> In Part 3, we would examine five object detection models: R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN. These models are highly related and the new versions show great speed improvement compared to the older ones.
-
-
-<!--more-->
-
-<span style="color: #286ee0;">[Updated on 2018-12-20: Remove YOLO here. Part 4 will cover multiple fast object detection algorithms, including YOLO.]</span>
-<br/>
-<span style="color: #286ee0;">[Updated on 2018-12-27: Add [bbox regression](#bounding-box-regression) and [tricks](#common-tricks) sections for R-CNN.]</span>
-
+> In This article, we would examine four object detection models: R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN. These models are highly related and the new versions show great speed improvement compared to the older ones.
 
 {: class="table-of-content"}
 * TOC
 {:toc}
-
-
 
 Here is a list of papers covered in this post ;)
 
@@ -30,7 +20,7 @@ Here is a list of papers covered in this post ;)
 
 ## R-CNN
 
-R-CNN ([Girshick et al., 2014](https://arxiv.org/abs/1311.2524)) is short for "Region-based Convolutional Neural Networks". The main idea is composed of two steps. First, using selective search, it identifies a manageable number of bounding-box object region candidates ("region of interest" or "RoI"). And then it extracts CNN features from each region independently for classification.
+R-CNN ([Girshick et al., 2014](https://arxiv.org/abs/1311.2524)) is short for "Region-based Convolutional Neural Networks". The main idea is composed of two steps. First, using [selective search](https://lilianweng.github.io/lil-log/2017/10/29/object-recognition-for-dummies-part-1.html#selective-search), it identifies a manageable number of bounding-box object region candidates ("region of interest" or "RoI"). And then it extracts CNN features from each region independently for classification.
 
 
 ![Architecture of R-CNN]({{ '/assets/images/RCNN.png' | relative_url }})
