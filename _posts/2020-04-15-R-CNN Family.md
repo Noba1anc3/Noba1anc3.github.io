@@ -25,7 +25,7 @@ R-CNN ([Girshick et al., 2014](https://arxiv.org/abs/1311.2524)) is short for "R
 
 
 ![Architecture of R-CNN]({{ '/assets/images/RCNN.png' }})
-{: style="width: 50%;" class="center"}
+{: style="width: 50" class="center"}
 *Fig. 1. The architecture of R-CNN. (Image source: [Girshick et al., 2014](https://arxiv.org/abs/1311.2524))*
 
 
