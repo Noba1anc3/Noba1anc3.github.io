@@ -203,7 +203,7 @@ Fast R-CNN is much faster in both training and testing time. However, the improv
 
 An intuitive speedup solution is to integrate the region proposal algorithm into the CNN model. **Faster R-CNN** ([Ren et al., 2016](https://arxiv.org/pdf/1506.01497.pdf)) is doing exactly this: construct a single, unified model composed of RPN (region proposal network) and fast R-CNN with shared convolutional feature layers.
 
-<img src="/assets/images/RCNN.png" width="1260" height="600" align="middle" />
+<img src="/assets/images/faster-RCNN.png" width="1260" height="600" align="middle" />
 
 *Fig. 7. An illustration of Faster R-CNN model. (Image source: [Ren et al., 2016](https://arxiv.org/pdf/1506.01497.pdf))*
 
@@ -255,8 +255,8 @@ $$
 
 Mask R-CNN ([He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf)) extends Faster R-CNN to pixel-level image segmentation. The key point is to decouple the classification and the pixel-level mask prediction tasks. Based on the framework of [Faster R-CNN](#faster-r-cnn), it added a third branch for predicting an object mask in parallel with the existing branches for classification and localization. The mask branch is a small fully-connected network applied to each RoI, predicting a segmentation mask in a pixel-to-pixel manner.
 
-![Mask R-CNN]({{ '/assets/images/mask-rcnn.png' }})
-{: style="width: 550px;" class="center"}
+<img src="/assets/images/mask-rcnn.png" width="682" height="335" align="middle" />
+
 *Fig. 8. Mask R-CNN is Faster R-CNN model with image segmentation. (Image source: [He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf))*
 
 Because pixel-level segmentation requires much more fine-grained alignment than bounding boxes, mask R-CNN improves the RoI pooling layer (named "RoIAlign layer") so that RoI can be better and more precisely mapped to the regions of the original image.
