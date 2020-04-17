@@ -23,9 +23,7 @@ Here is a list of papers covered in this post ;)
 
 R-CNN ([Girshick et al., 2014](https://arxiv.org/abs/1311.2524)) is short for "Region-based Convolutional Neural Networks". The main idea is composed of two steps. First, using [selective search](https://lilianweng.github.io/lil-log/2017/10/29/object-recognition-for-dummies-part-1.html#selective-search), it identifies a manageable number of bounding-box object region candidates ("region of interest" or "RoI"). And then it extracts CNN features from each region independently for classification.
 
-<img src="/assets/images/RCNN.png" width="409" height="108" align="middle" />
-
-![Architecture of R-CNN]({{ '/assets/images/RCNN.png' }})
+<img src="/assets/images/RCNN.png" width="1333" height="354" align="middle" />
 
 *Fig. 1. The architecture of R-CNN. (Image source: [Girshick et al., 2014](https://arxiv.org/abs/1311.2524))*
 
@@ -59,9 +57,9 @@ $$
 \end{aligned}
 $$
 
-
 ![bbox regression]({{ '/assets/images/RCNN-bbox-regression.png' }})
 {: style="width: 60%;" class="center"}
+
 *Fig. 2. Illustration of transformation between predicted and ground truth bounding boxes.*
 
 An obvious benefit of applying such transformation is that all the bounding box correction functions, $$d_i(\mathbf{p})$$ where $$i \in \{ x, y, w, h \}$$, can take any value between [-∞, +∞]. The targets for them to learn are:
@@ -97,9 +95,8 @@ Discard boxes with low confidence scores.
 Greedily select the one with the highest score.
 Skip the remaining boxes with high IoU (i.e. > 0.5) with previously selected one.
 
+<img src="/assets/images/non-max-suppression.png" width="1307" height="428" align="middle" />
 
-![Non-max suppression]({{ '/assets/images/non-max-suppression.png' }})
-{: class="center"}
 *Fig. 3. Multiple bounding boxes detect the car in the image. After non-maximum suppression, only the best remains and the rest are ignored as they have large overlaps with the selected one. (Image source: [DPM paper](http://lear.inrialpes.fr/~oneata/reading_group/dpm.pdf))*
 
 
@@ -206,8 +203,8 @@ Fast R-CNN is much faster in both training and testing time. However, the improv
 
 An intuitive speedup solution is to integrate the region proposal algorithm into the CNN model. **Faster R-CNN** ([Ren et al., 2016](https://arxiv.org/pdf/1506.01497.pdf)) is doing exactly this: construct a single, unified model composed of RPN (region proposal network) and fast R-CNN with shared convolutional feature layers.
 
-![Faster R-CNN]({{ '/assets/images/faster-RCNN.png' }})
-{: style="width: 100%;" class="center"}
+<img src="/assets/images/RCNN.png" width="1260" height="600" align="middle" />
+
 *Fig. 7. An illustration of Faster R-CNN model. (Image source: [Ren et al., 2016](https://arxiv.org/pdf/1506.01497.pdf))*
 
 
@@ -295,15 +292,11 @@ $$
 
 where $$y_{ij}$$ is the label of a cell (i, j) in the true mask for the region of size m x m; $$\hat{y}_{ij}^k$$ is the predicted value of the same cell in the mask learned for the ground-truth class k.
 
-
-
-
 ## Summary of Models in the R-CNN family
 
 Here I illustrate model designs of R-CNN, Fast R-CNN, Faster R-CNN and Mask R-CNN. You can track how one model evolves to the next version by comparing the small differences.
 
-![R-CNN family summary]({{ '/assets/images/rcnn-family-summary.png' }})
-{: style="width: 100%;" class="center"}
+<img src="/assets/images/rcnn-family-summary.png" width="1308" height="516" align="middle" />
 
 
 ---
