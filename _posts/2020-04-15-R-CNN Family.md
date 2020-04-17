@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: object-detection object-recognition
 ---
 
 > In This article, we would examine four object detection models: R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN. These models are highly related and the new versions show great speed improvement compared to the older ones.
@@ -24,7 +25,7 @@ R-CNN ([Girshick et al., 2014](https://arxiv.org/abs/1311.2524)) is short for "R
 
 
 ![Architecture of R-CNN]({{ '/assets/images/RCNN.png' }})
-{: style="width: 100%;" class="center"}
+{: style="width: 50%;" class="center"}
 *Fig. 1. The architecture of R-CNN. (Image source: [Girshick et al., 2014](https://arxiv.org/abs/1311.2524))*
 
 
