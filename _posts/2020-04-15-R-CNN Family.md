@@ -36,13 +36,18 @@ How R-CNN works can be summarized as follows:
 <br />
 > NOTE: You can find a pre-trained [AlexNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet) in Caffe Model [Zoo](https://github.com/caffe2/caffe2/wiki/Model-Zoo). I don’t think you can [find it](https://github.com/tensorflow/models/issues/1394) in Tensorflow, but Tensorflow-slim model [library](https://github.com/tensorflow/models/tree/master/research/slim) provides pre-trained ResNet, VGG, and others.
 2. Propose category-independent regions of interest by selective search (~2k candidates per image). Those regions may contain target objects and they are of different sizes.
-3. Region candidates are **warped** to have a fixed size as required by CNN.
+3. Region candidates are **warped** to have a fixed size as required by CNN. In the R-CNN paper, the size is set to 227*227.
+> NOTE: Here are three different methods to warp the image: 
+> 1.Resize width and height by different times, whether the image is distorted or not. 
+> 2.Resize width and height by same times, fill the gray part by original pixel.
+> 3.Resize width and height by same times, don't fill the gray part.
 4. Continue fine-tuning the CNN on warped proposal regions for K + 1 classes; The additional one class refers to the background (no object of interest). In the fine-tuning stage, we should use a much smaller learning rate and the mini-batch oversamples the positive cases because most proposed regions are just background.
+> NOTE: In PASCAL VOC, K = 20.
+> NOTE: The positive samples are proposed regions with IoU (intersection over union) overlap threshold 0.5, and negative samples are the others.
 5. Given every image region, one forward propagation through the CNN generates a feature vector. This feature vector is then consumed by a **binary SVM** trained for **each class** independently. 
-<br />
-The positive samples are proposed regions with IoU (intersection over union) overlap threshold >= 0.3, and negative samples are irrelevant others.
+> Note: The positive samples are proposed regions with IoU (intersection over union) overlap threshold >= 0.3, and negative samples are irrelevant others.
 6. To reduce the localization errors, a regression model is trained to correct the predicted detection window on bounding box correction offset using CNN features.
-
+> Note: The positive sample are the proposed region with max IoU (intersection over union) overlap, and it should greater than 0.6.
 
 ### Bounding Box Regression
 
