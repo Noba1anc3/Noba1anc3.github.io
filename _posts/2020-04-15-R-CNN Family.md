@@ -24,7 +24,7 @@ Here is a list of papers covered in this post ;)
 R-CNN ([Girshick et al., 2014](https://arxiv.org/abs/1311.2524)) is short for "Region-based Convolutional Neural Networks". The main idea is composed of two steps. First, using [selective search](https://lilianweng.github.io/lil-log/2017/10/29/object-recognition-for-dummies-part-1.html#selective-search), it identifies a manageable number of bounding-box object region candidates ("region of interest" or "RoI"). And then it extracts CNN features from each region independently for classification.
 
 <img src="/assets/images/RCNN.png" width="1333" height="354" align="middle" />
-
+<img src="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPnw0bK8GKlsG36zf11Sq0F.lABK7HdA8rYhPxGWNp8qdlgvi0ozYnTLrLOcfuVfyH*g!!/b&bo=YAafAwAAAAARB8o!&rf=viewer_4" />
 *Fig. 1. The architecture of R-CNN. (Image source: [Girshick et al., 2014](https://arxiv.org/abs/1311.2524))*
 
 
