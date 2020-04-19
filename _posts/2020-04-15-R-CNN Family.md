@@ -25,6 +25,7 @@ R-CNN ([Girshick et al., 2014](https://arxiv.org/abs/1311.2524)) is short for "R
 
 <img src="/assets/images/RCNN.png" width="1333" height="354" align="middle" />
 <img src="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPnzJk4F9qtYmNuFFHSM0Ec3PipxLmElYUeQv8OJiNiq77tGxfeV.qPkrYdtB*e4XoUg!!/b&bo=WwaCA1sGggMRCT4!&rf=viewer_4"  width="1224" height="618" />
+
 *Fig. 1. The architecture of R-CNN. (Image source: [Girshick et al., 2014](https://arxiv.org/abs/1311.2524))*
 
 
