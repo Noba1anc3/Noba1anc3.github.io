@@ -109,7 +109,7 @@ Skip the remaining boxes with high IoU (i.e. > 0.5) with previously selected one
 
 We consider bounding boxes without objects as negative examples. Not all the negative examples are equally hard to be identified. For example, if it holds pure empty background, it is likely an “*easy negative*”; but if the box contains weird noisy texture or partial object, it could be hard to be recognized and these are “*hard negative*”. 
 
-The hard negative examples are easily misclassified. We can explicitly find those false positive samples during the training loops and include them in the training data so as to improve the classifier.
+The hard negative examples are easily misclassified, and the recall rate is reduced. We can explicitly find those false positive samples with an IoU greater than a threshold during the training loops and include them in the training data so as to improve the classifier.
 
 
 ### Speed Bottleneck
