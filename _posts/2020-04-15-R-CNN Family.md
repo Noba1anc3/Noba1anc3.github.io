@@ -37,9 +37,9 @@ How R-CNN works can be summarized as follows:
 > NOTE: You can find a pre-trained [AlexNet](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet) in Caffe Model [Zoo](https://github.com/caffe2/caffe2/wiki/Model-Zoo). I don’t think you can [find it](https://github.com/tensorflow/models/issues/1394) in Tensorflow, but Tensorflow-slim model [library](https://github.com/tensorflow/models/tree/master/research/slim) provides pre-trained ResNet, VGG, and others.
 2. Propose category-independent regions of interest by selective search (~2k candidates per image). Those regions may contain target objects and they are of different sizes.
 3. Region candidates are **warped** to have a fixed size as required by CNN. In the R-CNN paper, the size is set to 227*227.
-> NOTE: Here are three different methods to warp the image: 
-> 1.Resize width and height by different times, whether the image is distorted or not. 
-> 2.Resize width and height by same times, fill the gray part by original pixel.
+> NOTE: Here are three different methods to warp the image:   
+> 1.Resize width and height by different times, whether the image is distorted or not.   
+> 2.Resize width and height by same times, fill the gray part by original pixel.  
 > 3.Resize width and height by same times, don't fill the gray part.
 4. Continue fine-tuning the CNN on warped proposal regions for K + 1 classes; The additional one class refers to the background (no object of interest). In the fine-tuning stage, we should use a much smaller learning rate and the mini-batch oversamples the positive cases because most proposed regions are just background.
 > NOTE: In PASCAL VOC, K = 20.
