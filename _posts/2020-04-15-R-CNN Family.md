@@ -198,7 +198,12 @@ $$
 {: style="width: 240px;" class="center"}
 *Fig. 6. The plot of smooth L1 loss, $$y = L_1^\text{smooth}(x)$$. (Image source: [link](https://github.com/rbgirshick/py-faster-rcnn/files/764206/SmoothL1Loss.1.pdf))*
 
+### Improvement
 
+1. Only do convolution once on the whole image, refrain from repetitive computation.
+2. Use RoI Pooling to transform all features into the same size, refrained from image distortion.
+3. Use softmax layer for classification.
+4. Integrate bbox regression into the network, and use a unified loss function.
 
 ### Speed Bottleneck
 
