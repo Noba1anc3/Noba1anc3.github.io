@@ -263,6 +263,15 @@ The input is a 3 channel image, and there are two conv kernels. Each kernel conv
 For every convolution layer, whether there are how many channels in the input, the num of output channel always equals to the num of kernels.  
 When doing 1 * 1 convolution on multi-channel image, it means to add up all the channel by a conv parameter of the image. In other words, to mix all the independent channels up.
 
+#### Anchors
+Anchors is a set of matrices, with width:height ∈ {1:1, 1:2, 2:1}. It is a type of multi-scale training method.
+
+![](https://pic4.zhimg.com/80/v2-7abead97efcc46a3ee5b030a2151643f_720w.jpg)
+![](https://pic2.zhimg.com/80/v2-4b15828dfee19be726835b671748cc4d_1440w.jpg)
+
+*Fig. 12. Illustration of Anchors*
+
+
 ### Model Workflow
 1. Pre-train a CNN network on image classification tasks.
 2. Fine-tune the RPN (region proposal network) end-to-end for the region proposal task, which is initialized by the pre-train image classifier. Positive samples have IoU (intersection-over-union) > 0.7, while negative samples have IoU < 0.3.
