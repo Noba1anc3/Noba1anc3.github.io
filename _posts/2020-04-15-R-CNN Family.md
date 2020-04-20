@@ -218,6 +218,17 @@ An intuitive speedup solution is to integrate the region proposal algorithm into
 
 *Fig. 7. An illustration of Faster R-CNN model. (Image source: [Ren et al., 2016](https://arxiv.org/pdf/1506.01497.pdf))*
 
+### Model Parts
+1. Conv Layers: It uses a set of conv + relu + pooling layers to extract feature maps of the image.
+2. Region Proposal Networks: RPN is used for generating region proposals. It classify an anchor is positive or negative by softmax, and use bounding box regression to correct the position.
+3. RoI Pooling: Its input is the feature maps and RPs, and extract proposal feature maps out for classification.
+4. Classification: calculate the class of the proposal by proposal feature maps, use bbox regression to get the precise location.
+
+Here is an architecture of VGG16 based Faster R-CNN. The input size is P * Q, and it is resized to M * N. There are 13 conv layers, 13 ReLU layers and 4 Pooling layers in the conv layers. RPN first calculate a 3 * 3 conv, then generate proposals comprised of positive anchors and its corresponding bbox offset. RoI Pooling layer uses proposals to extract proposal feature from feature maps. Then proposal features is sent into fc layer and softmax for classification.
+
+<img src="https://pic4.zhimg.com/80/v2-e64a99b38f411c337f538eb5f093bdf3_720w.jpg" />
+
+*Fig. 8. The Architecture of VGG-16 based Faster R-CNN model. (Image source: pascal_voc/VGG16/faster_rcnn_alt_opt/faster_rcnn_test.pt)*
 
 ### Model Workflow
 
@@ -268,7 +279,7 @@ Mask R-CNN ([He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf)) extends Fas
 
 <img src="/assets/images/mask-rcnn.png" width="682" height="335" align="middle" />
 
-*Fig. 8. Mask R-CNN is Faster R-CNN model with image segmentation. (Image source: [He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf))*
+*Fig. 9. Mask R-CNN is Faster R-CNN model with image segmentation. (Image source: [He et al., 2017](https://arxiv.org/pdf/1703.06870.pdf))*
 
 Because pixel-level segmentation requires much more fine-grained alignment than bounding boxes, mask R-CNN improves the RoI pooling layer (named "RoIAlign layer") so that RoI can be better and more precisely mapped to the regions of the original image.
 
