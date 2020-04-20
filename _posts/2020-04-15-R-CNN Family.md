@@ -239,6 +239,7 @@ In VGG-16, there are 13 conv layers, 13 ReLU layers and 4 Pooling layers.
 After the padding process, the size is changed to (M+2) * (N+2), and after the conv process, the size is returned to M * N. So, the matrix size don't change during all the convolution process.
 
 ![](https://pic2.zhimg.com/80/v2-3c772e9ed555eb86a97ef9c08bf563c9_720w.jpg)
+
 *Fig. 9. Convolution Process of VGG-16*
 
 After the pooling layer, the M * N matrix is transformed into (M/2) * (N/2).  
@@ -248,12 +249,14 @@ So, after the Conv layers of Faster R-CNN, the size is changed to (M/16) * (N/16
 Classical methods for generating bboxes are time-consuming, like sliding-window + paramid in adaboost, or selective search in R-CNN. In Faster R-CNN, it generate bboes by RPN directly. This is the huge advantage of generating bboxes in a fast manner.
 
 ![](https://pic3.zhimg.com/80/v2-1908feeaba591d28bee3c4a754cca282_720w.jpg)
+
 *Fig. 10. The Architecture of RPN in Faster R-CNN*
 
 There are two process line in RPN, the upper one decides whether an anchor is positive or negative by softmax, the lower one calculates the offset for positive anchors by bbox regression. It will discard small proposals and over-bounding proposals.
 
 #### Multi-Channel Convolution with Muiti-Kernel
 ![](https://pic1.zhimg.com/80/v2-8d72777321cbf1336b79d839b6c7f9fc_720w.jpg)
+
 *Fig. 11. Calculation Process of Multi-Channel Convolution with Multi-Kernel*
 
 The input is a 3 channel image, and there are two conv kernels. Each kernel convolution on 3 channels, and add them as the output.  
