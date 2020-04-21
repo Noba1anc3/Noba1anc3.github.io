@@ -236,7 +236,7 @@ In VGG-16, there are 13 conv layers, 13 ReLU layers and 4 Pooling layers.
 - All the conv layers with kernel size = 3, padding = 1, stride = 1
 - All the pooling layers with kernel size = 2, padding = 0, stride = 2
 
-After the padding process, the size is changed to (M+2) * (N+2), and after the conv process, the size is returned to M * N. So, the matrix size don't change during all the convolution process.
+After the padding process, the size is changed to (M+2) * (N+2), and after the conv process, the size is returned to M * N. So, the size of matrix won't change during all the convolution process.
 
 ![](https://pic2.zhimg.com/80/v2-3c772e9ed555eb86a97ef9c08bf563c9_720w.jpg)
 
@@ -254,21 +254,35 @@ Classical methods for generating bboxes are time-consuming, like sliding-window 
 
 There are two process line in RPN, the upper one decides whether an anchor is positive or negative by softmax, the lower one calculates the offset for positive anchors by bbox regression. It will discard small proposals and over-bounding proposals.
 
-#### Multi-Channel Convolution with Muiti-Kernel
+##### Multi-Channel Convolution with Muiti-Kernel
 ![](https://pic1.zhimg.com/80/v2-8d72777321cbf1336b79d839b6c7f9fc_720w.jpg)
 
-*Fig. 11. Calculation Process of Multi-Channel Convolution with Multi-Kernel*
+*Fig. 11. Multi-Kernel Multi-Channel Convolution*
 
 The input is a 3 channel image, and there are two conv kernels. Each kernel convolution on 3 channels, and add them as the output.  
 For every convolution layer, whether there are how many channels in the input, the num of output channel always equals to the num of kernels.  
 When doing 1 * 1 convolution on multi-channel image, it means to add up all the channel by a conv parameter of the image. In other words, to mix all the independent channels up.
 
-#### Anchors
+##### Anchors
 Anchors is a set of bboxes, with width:height ∈ {1:1, 1:2, 2:1}. It is a type of multi-scale training method.
 
 ![](https://pic2.zhimg.com/80/v2-4b15828dfee19be726835b671748cc4d_1440w.jpg)
 
 *Fig. 12. Illustration of Anchors*
+
+##### Anchor Classification
+We do 1x1 convolution on the feature map output by Conv layers for positive/negative classification. The num of output channels is 18, corresponding to 9 anchors and 2 possible cls. Softmax will decide which anchor is positive, and reshape is for the purpose of convenient classification. 
+
+![](https://pic4.zhimg.com/80/v2-1ab4b6c3dd607a5035b5203c76b078f3_720w.jpg)
+
+*Fig. 13. Positive / Negative Classification*
+
+##### Bounding Box Regression
+We do 1x1 convolution on the feature map output by Conv layers for bbox regression.The number of output channel is 36, corresponding to 4 parameters of 9 anchors (x,y,w,h).
+
+![](https://pic3.zhimg.com/80/v2-8241c8076d60156248916fe2f1a5674a_720w.jpg)
+
+*Fig. 14. Bounding Box Regression*
 
 ### Model Workflow
 1. Pre-train a CNN network on image classification tasks.
