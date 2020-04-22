@@ -23,15 +23,15 @@ I strongly recommend this [guide](https://arxiv.org/pdf/1603.07285.pdf) to convo
 In short, convolution operation slides a predefined [kernel](https://en.wikipedia.org/wiki/Kernel_(image_processing)) (also called "filter") on top of the input feature map (matrix of image pixels), multiplying and adding the values of the kernel and partial input features to generate the output. The values form an output matrix, as usually, the kernel is much smaller than the input image.
 
 
-![Convolution Operation]({{ '/assets/images/convolution-operation.png' | relative_url }})
+![Convolution Operation]({{ '/assets/images/convolution-operation.png' }})
 {: style="width: 500px;" class="center"}
 *Fig. 1. An illustration of applying a kernel on the input feature map to generate the output. (Image source: [River Trail documentation](http://intellabs.github.io/RiverTrail/tutorial/))*
 
 
 Figure 2 showcases two real examples of how to convolve a 3x3 kernel over a 5x5 2D matrix of numeric values to generate a 3x3 matrix. By controlling the padding size and the stride length, we can generate an output matrix of a certain size.
 
-![Convolution Operation]({{ '/assets/images/numerical_no_padding_no_strides.gif' | relative_url }})
-![Convolution Operation]({{ '/assets/images/numerical_padding_strides.gif' | relative_url }})
+![Convolution Operation]({{ '/assets/images/numerical_no_padding_no_strides.gif' }})
+![Convolution Operation]({{ '/assets/images/numerical_padding_strides.gif' }})
 {: style="width: 300px;" class="center"}
 *Fig. 2. Two examples of 2D convolution operation: (top) no padding and 1x1 strides; (bottom) 1x1 border zeros padding and 2x2 strides. (Image source: [deeplearning.net](http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html))*
 
@@ -41,7 +41,7 @@ Figure 2 showcases two real examples of how to convolve a 3x3 kernel over a 5x5 
 - Use data augmentation techniques to expand the training dataset, such as image translations, horizontal reflections, and patch extractions.
 
 
-![Convolution pperation example]({{ '/assets/images/alex_net_illustration.png' | relative_url }})
+![Convolution pperation example]({{ '/assets/images/alex_net_illustration.png' }})
 {: style="width: 100%;" class="center"}
 *Fig. 3. The architecture of AlexNet. (Image source: [link](http://vision03.csail.mit.edu/cnn_art/index.html))*
 
@@ -57,7 +57,7 @@ Figure 2 showcases two real examples of how to convolve a 3x3 kernel over a 5x5 
 - **Residual Block**: Some input of a certain layer can be passed to the component two layers later. Residual blocks are essential for keeping a deep network trainable and eventually work. Without residual blocks, the training loss of a plain network does not monotonically decrease as the number of layers increases due to [vanishing and exploding gradients](http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/).
 
 
-![Residual block]({{ '/assets/images/residual-block.png' | relative_url }})
+![Residual block]({{ '/assets/images/residual-block.png' }})
 {: style="width: 100%;" class="center"}
 *Fig. 4. An illustration of the residual block of ResNet. In some way, we can say the design of residual blocks is inspired by V4 getting input directly from V1 in the human visual cortex system. (left image source: [Wang et al., 2017](https://arxiv.org/pdf/1312.6229.pdf))*
 
@@ -80,7 +80,7 @@ The Deformable Parts Model (DPM) ([Felzenszwalb et al., 2010](http://people.cs.u
 3. A ___spatial model___ for scoring the locations of part filters relative to the root.
 
 
-![DPM]({{ '/assets/images/DPM.png' | relative_url }})
+![DPM]({{ '/assets/images/DPM.png' }})
 {: style="width: 100%;" class="center"}
 *Fig. 5. The DPM model contains (a) a root filter, (b) multiple part filters at twice the resolution, and (c) a model for scoring the location and deformation of parts.*
 
@@ -105,7 +105,7 @@ The basic score model is the dot product between the filter $$\beta$$ and the re
 A root location with high score detects a region with high chances to contain an object, while the locations of the parts with high scores confirm a recognized object hypothesis. The paper adopted latent SVM to model the classifier.
 
 
-![DPM matching process]({{ '/assets/images/DPM-matching.png' | relative_url }})
+![DPM matching process]({{ '/assets/images/DPM-matching.png' }})
 {: style="width: 100%;" class="center"}
 *Fig. 6. The matching process by DPM. (Image source: [Felzenszwalb et al., 2010](http://people.cs.uchicago.edu/~pff/papers/lsvm-pami.pdf))*
 
@@ -121,7 +121,7 @@ Overfeat [[paper](https://pdfs.semanticscholar.org/f2c2/fbc35d0541571f54790851de
 The Overfeat model architecture is very similar to [AlexNet](#alexnet-krizhevsky-et-al-2012). It is trained as follows:
 
 
-![Overfeat training]({{ '/assets/images/overfeat-training.png' | relative_url }})
+![Overfeat training]({{ '/assets/images/overfeat-training.png' }})
 {: style="width: 400px;" class="center"}
 *Fig. 7. The training stages of the Overfeat model. (Image source: [link](http://vision.stanford.edu/teaching/cs231b_spring1415/slides/overfeat_eric.pdf))*
 
@@ -142,12 +142,12 @@ At the detection time,
 ---
 Cited as:
 ```
-@article{weng2017detection2,
-  title   = "Object Detection for Dummies Part 2: CNN, DPM and Overfeat",
-  author  = "Weng, Lilian",
-  journal = "lilianweng.github.io/lil-log",
-  year    = "2017",
-  url     = "http://lilianweng.github.io/lil-log/2017/12/15/object-recognition-for-dummies-part-2.html"
+@article{
+  title   = "CNN, DPM and Overfeat",
+  author  = "Zhang, Xuanrui",
+  journal = "noba1anc3.github.io",
+  year    = "2020",
+  url     = "https://noba1anc3.github.io/2020/04/22/CNN,-DPM-and-Overfeat.html"
 }
 ```
 
