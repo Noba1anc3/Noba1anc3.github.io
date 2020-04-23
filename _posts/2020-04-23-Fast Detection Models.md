@@ -215,8 +215,8 @@ b_h &= p_h e^{t_h}\\
 \end{aligned}
 $$
 
-![YOLOv2 bbox location prediction]({{ '/assets/images/yolov2-loc-prediction.png' }})
-{: style="width: 50%;" class="center"}
+<img src="/assets/images/yolov2-loc-prediction.png" width="598" height="477" />
+
 *Fig. 7. YOLOv2 bounding box location prediction. (Image source: [original paper](https://arxiv.org/abs/1612.08242))*
 
 **6. Add fine-grained features**: YOLOv2 adds a passthrough layer to bring *fine-grained features* from an earlier layer to the last output layer. The mechanism of this passthrough layer is similar to *identity mappings in ResNet* to extract higher-dimensional features from previous layers. This leads to 1% performance increase.
@@ -234,9 +234,8 @@ The detection dataset has much fewer and more general labels and, moreover, labe
 
 In order to efficiently merge ImageNet labels (1000 classes, fine-grained) with COCO/PASCAL (< 100 classes, coarse-grained), YOLO9000 built a hierarchical tree structure with reference to [WordNet](https://wordnet.princeton.edu/) so that general labels are closer to the root and the fine-grained class labels are leaves. In this way, "cat" is the parent node of "Persian cat".
 
+<img src="/assets/images/word-tree.png" width="635" height="214" />
 
-![WordTree]({{ '/assets/images/word-tree.png' }})
-{: style="width:100%;" class="center"}
 *Fig. 8. The WordTree hierarchy merges labels from COCO and ImageNet. Blue nodes are COCO labels and red nodes are ImageNet labels. (Image source: [original paper](https://arxiv.org/abs/1612.08242))*
 
 To predict the probability of a class node, we can follow the path from the node to the root:
