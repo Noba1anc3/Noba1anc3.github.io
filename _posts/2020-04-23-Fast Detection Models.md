@@ -110,6 +110,37 @@ On top of VGG16, SSD adds several conv feature layers of decreasing sizes. They 
 *Fig. 4. The model architecture of SSD.*
 
 
+
+### Workflow
+
+Unlike YOLO, SSD does not split the image into grids of arbitrary size but predicts offset of predefined *anchor boxes* (this is called "default boxes" in the paper) for every location of the feature map. Each box has a fixed size and position relative to its corresponding cell. All the anchor boxes tile the whole feature map in a convolutional manner.
+
+Feature maps at different levels have different receptive field sizes. The anchor boxes on different levels are rescaled so that one feature map is only responsible for objects at one particular scale. For example, in Fig. 5 the dog can only be detected in the 4x4 feature map (higher level) while the cat is just captured by the 8x8 feature map (lower level).
+
+![SSD framework]({{ '/assets/images/SSD-framework.png' }})
+{: class="center"}
+*Fig. 5. The SSD framework. (a) The training data contains images and ground truth boxes for every object. (b) In a fine-grained feature maps (8 x 8), the anchor boxes of different aspect ratios correspond to smaller area of the raw input. (c) In a coarse-grained feature map (4 x 4), the anchor boxes cover larger area of the raw input. (Image source: [original paper](https://arxiv.org/abs/1512.02325))*
+
+
+The width, height and the center location of an anchor box are all normalized to be (0, 1). At a location $$(i, j)$$ of the $$\ell$$-th feature layer of size $$m \times n$$, $$i=1,\dots,n, j=1,\dots,m$$, we have a unique linear scale proportional to the layer level and 5 different box aspect ratios (width-to-height ratios), in addition to a special scale (why we need this? the paper didn’t explain. maybe just a heuristic trick) when the aspect ratio is 1. This gives us 6 anchor boxes in total per feature cell.
+
+$$
+\begin{aligned}
+\text{level index: } &\ell = 1, \dots, L \\
+\text{scale of boxes: } &s_\ell = s_\text{min} + \frac{s_\text{max} - s_\text{min}}{L - 1} (\ell - 1) \\
+\text{aspect ratio: } &r \in \{1, 2, 3, 1/2, 1/3\}\\
+\text{additional scale: } & s'_\ell = \sqrt{s_\ell s_{\ell + 1}} \text{ when } r = 1 \text{thus, 6 boxes in total.}\\
+\text{width: } &w_\ell^r = s_\ell \sqrt{r} \\
+\text{height: } &h_\ell^r = s_\ell / \sqrt{r} \\
+\text{center location: } & (x^i_\ell, y^j_\ell) = (\frac{i+0.5}{m}, \frac{j+0.5}{n})
+\end{aligned}
+$$
+
+
+![Box scales]({{ '/assets/images/SSD-box-scales.png' }})
+{: class="center"}
+*Fig. 6. An example of how the anchor box size is scaled up with the layer index $$\ell$$ for $$L=6, s_\text{min} = 0.2, s_\text{max} = 0.9$$. Only the boxes of aspect ratio $$r=1$$ are illustrated.*
+
 ## YOLOv2 / YOLO9000
 
 **YOLOv2** ([Redmon & Farhadi, 2017](https://arxiv.org/abs/1612.08242)) is an enhanced version of YOLO. **YOLO9000** is built on top of YOLOv2 but trained with joint dataset combining the COCO detection dataset and the top 9000 classes from ImageNet.
