@@ -60,3 +60,200 @@ The base model is similar to [GoogLeNet](https://www.cs.unc.edu/~wliu/papers/Goo
 {: class="center"}
 *Fig. 2. The network architecture of YOLO.*
 
+
+### Loss Function
+
+The loss consists of two parts, the *localization loss* for bounding box offset prediction and the *classification loss* for conditional class probabilities. Both parts are computed as the sum of squared errors. Two scale parameters are used to control how much we want to increase the loss from bounding box coordinate predictions ($$\lambda_\text{coord}$$) and how much we want to decrease the loss of confidence score predictions for boxes without objects ($$\lambda_\text{noobj}$$). Down-weighting the loss contributed by background boxes is important as most of the bounding boxes involve no instance. In the paper, the model sets $$\lambda_\text{coord} = 5$$ and $$\lambda_\text{noobj} = 0.5$$.
+
+
+$$
+\begin{aligned}
+\mathcal{L}_\text{loc} &= \lambda_\text{coord} \sum_{i=0}^{S^2} \sum_{j=0}^B \mathbb{1}_{ij}^\text{obj} [(x_i - \hat{x}_i)^2 + (y_i - \hat{y}_i)^2 + (\sqrt{w_i} - \sqrt{\hat{w}_i})^2 + (\sqrt{h_i} - \sqrt{\hat{h}_i})^2 ] \\
+\mathcal{L}_\text{cls}  &= \sum_{i=0}^{S^2} \sum_{j=0}^B \big( \mathbb{1}_{ij}^\text{obj} + \lambda_\text{noobj} (1 - \mathbb{1}_{ij}^\text{obj})\big) (C_{ij} - \hat{C}_{ij})^2 + \sum_{i=0}^{S^2} \sum_{c \in \mathcal{C}} \mathbb{1}_i^\text{obj} (p_i(c) - \hat{p}_i(c))^2\\
+\mathcal{L} &= \mathcal{L}_\text{loc} + \mathcal{L}_\text{cls}
+\end{aligned}
+$$
+
+> NOTE: In the original YOLO paper, the loss function uses $$C_i$$ instead of $$C_{ij}$$ as confidence score. I made the correction based on my own understanding, since every bounding box should have its own confidence score. Please kindly let me if you do not agree. Many thanks.
+
+where,
+- $$\mathbb{1}_i^\text{obj}$$: An indicator function of whether the cell i contains an object.
+- $$\mathbb{1}_{ij}^\text{obj}$$: It indicates whether the j-th bounding box of the cell i is "responsible" for the object prediction (see Fig. 3).
+- $$C_{ij}$$: The confidence score of cell i, `Pr(containing an object) * IoU(pred, truth)`.
+- $$\hat{C}_{ij}$$: The predicted confidence score.
+- $$\mathcal{C}$$: The set of all classes.
+- $$p_i(c)$$: The conditional probability of whether cell i contains an object of class $$c \in \mathcal{C}$$.
+- $$\hat{p}_i(c)$$: The predicted conditional class probability.
+
+
+![YOLO responsible predictor]({{ '/assets/images/yolo-responsible-predictor.png' }})
+{: style="width: 85%;" class="center"}
+*Fig. 3. At one location, in cell i, the model proposes B bounding box candidates and the one that has highest overlap with the ground truth is the "responsible" predictor.*
+
+The loss function only penalizes classification error if an object is present in that grid cell, $$\mathbb{1}_i^\text{obj} = 1$$. It also only penalizes bounding box coordinate error if that predictor is "responsible" for the ground truth box, $$\mathbb{1}_{ij}^\text{obj} = 1$$.
+
+As a one-stage object detector, YOLO is super fast, but it is not good at recognizing irregularly shaped objects or a group of small objects due to a limited number of bounding box candidates.
+
+
+## SSD: Single Shot MultiBox Detector
+
+The **Single Shot Detector** (**SSD**; [Liu et al, 2016](https://arxiv.org/abs/1512.02325)) is one of the first attempts at using convolutional neural network's pyramidal feature hierarchy for efficient detection of objects of various sizes.
+
+
+### Image Pyramid
+
+SSD uses the [VGG-16](https://arxiv.org/abs/1409.1556) model pre-trained on ImageNet as its base model for extracting useful image features.
+On top of VGG16, SSD adds several conv feature layers of decreasing sizes. They can be seen as a *pyramid representation* of images at different scales. Intuitively large fine-grained feature maps at earlier levels are good at capturing small objects and small coarse-grained feature maps can detect large objects well. In SSD, the detection happens in every pyramidal layer, targeting at objects of various sizes. 
+
+
+![SSD architecture]({{ '/assets/images/SSD-architecture.png' }})
+{: class="center"}
+*Fig. 4. The model architecture of SSD.*
+
+
+### Workflow
+
+Unlike YOLO, SSD does not split the image into grids of arbitrary size but predicts offset of predefined *anchor boxes* (this is called "default boxes" in the paper) for every location of the feature map. Each box has a fixed size and position relative to its corresponding cell. All the anchor boxes tile the whole feature map in a convolutional manner.
+
+Feature maps at different levels have different receptive field sizes. The anchor boxes on different levels are rescaled so that one feature map is only responsible for objects at one particular scale. For example, in Fig. 5 the dog can only be detected in the 4x4 feature map (higher level) while the cat is just captured by the 8x8 feature map (lower level).
+
+![SSD framework]({{ '/assets/images/SSD-framework.png' }})
+{: class="center"}
+*Fig. 5. The SSD framework. (a) The training data contains images and ground truth boxes for every object. (b) In a fine-grained feature maps (8 x 8), the anchor boxes of different aspect ratios correspond to smaller area of the raw input. (c) In a coarse-grained feature map (4 x 4), the anchor boxes cover larger area of the raw input. (Image source: [original paper](https://arxiv.org/abs/1512.02325))*
+
+
+The width, height and the center location of an anchor box are all normalized to be (0, 1). At a location $$(i, j)$$ of the $$\ell$$-th feature layer of size $$m \times n$$, $$i=1,\dots,n, j=1,\dots,m$$, we have a unique linear scale proportional to the layer level and 5 different box aspect ratios (width-to-height ratios), in addition to a special scale (why we need this? the paper didn’t explain. maybe just a heuristic trick) when the aspect ratio is 1. This gives us 6 anchor boxes in total per feature cell.
+
+$$
+\begin{aligned}
+\text{level index: } &\ell = 1, \dots, L \\
+\text{scale of boxes: } &s_\ell = s_\text{min} + \frac{s_\text{max} - s_\text{min}}{L - 1} (\ell - 1) \\
+\text{aspect ratio: } &r \in \{1, 2, 3, 1/2, 1/3\}\\
+\text{additional scale: } & s'_\ell = \sqrt{s_\ell s_{\ell + 1}} \text{ when } r = 1 \text{thus, 6 boxes in total.}\\
+\text{width: } &w_\ell^r = s_\ell \sqrt{r} \\
+\text{height: } &h_\ell^r = s_\ell / \sqrt{r} \\
+\text{center location: } & (x^i_\ell, y^j_\ell) = (\frac{i+0.5}{m}, \frac{j+0.5}{n})
+\end{aligned}
+$$
+
+
+![Box scales]({{ '/assets/images/SSD-box-scales.png' }})
+{: class="center"}
+*Fig. 6. An example of how the anchor box size is scaled up with the layer index $$\ell$$ for $$L=6, s_\text{min} = 0.2, s_\text{max} = 0.9$$. Only the boxes of aspect ratio $$r=1$$ are illustrated.*
+
+At every location, the model outputs 4 offsets and $$c$$ class probabilities by applying a $$3 \times 3 \times p$$ conv filter (where $$p$$ is the number of channels in the feature map) for every one of $$k$$ anchor boxes. Therefore, given a feature map of size $$m \times n$$, we need $$kmn(c+4)$$ prediction filters.
+
+
+### Loss Function
+
+Same as YOLO, the loss function is the sum of a localization loss and a classification loss.
+
+$$\mathcal{L} = \frac{1}{N}(\mathcal{L}_\text{cls} + \alpha \mathcal{L}_\text{loc})$$
+
+where $$N$$ is the number of matched bounding boxes and $$\alpha$$ balances the weights between two losses, picked by cross validation.
+
+The *localization loss* is a [smooth L1 loss](https://github.com/rbgirshick/py-faster-rcnn/files/764206/SmoothL1Loss.1.pdf) between the predicted bounding box correction and the true values. The coordinate correction transformation is same as what [R-CNN]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#r-cnn) does in [bounding box regression]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression).
+
+$$
+\begin{aligned}
+\mathcal{L}_\text{loc} &= \sum_{i,j} \sum_{m\in\{x, y, w, h\}} \mathbb{1}_{ij}^\text{match}
+ L_1^\text{smooth}(d_m^i - t_m^j)^2\\
+L_1^\text{smooth}(x) &= \begin{cases}
+    0.5 x^2             & \text{if } \vert x \vert < 1\\
+    \vert x \vert - 0.5 & \text{otherwise}
+\end{cases} \\
+t^j_x &= (g^j_x - p^i_x) / p^i_w \\
+t^j_y &= (g^j_y - p^i_y) / p^i_h \\
+t^j_w &= \log(g^j_w / p^i_w) \\
+t^j_h &= \log(g^j_h / p^i_h)
+\end{aligned}
+$$
+
+where $$\mathbb{1}_{ij}^\text{match}$$ indicates whether the $$i$$-th bounding box with coordinates $$(p^i_x, p^i_y, p^i_w, p^i_h)$$ is matched to the $$j$$-th ground truth box with coordinates $$(g^j_x, g^j_y, g^j_w, g^j_h)$$ for any object. $$d^i_m, m\in\{x, y, w, h\}$$ are the predicted correction terms. See [this]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression) for how the transformation works.
+
+The *classification loss* is a softmax loss over multiple classes ([softmax_cross_entropy_with_logits](https://www.tensorflow.org/api_docs/python/tf/nn/softmax_cross_entropy_with_logits) in tensorflow):
+
+
+$$
+\mathcal{L}_\text{cls} = -\sum_{i \in \text{pos}} \mathbb{1}_{ij}^k \log(\hat{c}_i^k) - \sum_{i \in \text{neg}} \log(\hat{c}_i^0)\text{, where }\hat{c}_i^k = \text{softmax}(c_i^k)
+$$
+
+where $$\mathbb{1}_{ij}^k$$ indicates whether the $$i$$-th bounding box and the $$j$$-th ground truth box are matched for an object in class $$k$$. $$\text{pos}$$ is the set of matched bounding boxes ($$N$$ items in total) and  $$\text{neg}$$ is the set of negative examples. SSD uses [hard negative mining]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#common-tricks) to select easily misclassified negative examples to construct this $$\text{neg}$$ set: Once all the anchor boxes are sorted by objectiveness confidence score, the model picks the top candidates for training so that neg:pos is at most 3:1.
+
+
+
+## YOLOv2 / YOLO9000
+
+**YOLOv2** ([Redmon & Farhadi, 2017](https://arxiv.org/abs/1612.08242)) is an enhanced version of YOLO. **YOLO9000** is built on top of YOLOv2 but trained with joint dataset combining the COCO detection dataset and the top 9000 classes from ImageNet.
+
+
+### YOLOv2 Improvement
+
+A variety of modifications are applied to make YOLO prediction more accurate and faster, including:
+
+**1. BatchNorm helps**: Add *batch norm* on all the convolutional layers, leading to significant improvement over convergence.
+
+**2. Image resolution matters**: Fine-tuning the base model with *high resolution* images improves the detection performance.
+
+**3. Convolutional anchor box detection**: Rather than predicts the bounding box position with fully-connected layers over the whole feature map, YOLOv2 uses *convolutional layers* to predict locations of *anchor boxes*, like in faster R-CNN. The prediction of spatial locations and class probabilities are decoupled. Overall, the change leads to a slight decrease in mAP, but an increase in recall.
+
+**4. K-mean clustering of box dimensions**: Different from faster R-CNN that uses hand-picked sizes of anchor boxes, YOLOv2 runs k-mean clustering on the training data to find good priors on anchor box dimensions. The distance metric is designed to *rely on IoU scores*:
+
+$$
+\text{dist}(x, c_i) = 1 - \text{IoU}(x, c_i), i=1,\dots,k
+$$
+
+where $$x$$ is a ground truth box candidate and $$c_i$$ is one of the centroids. The best number of centroids (anchor boxes) $$k$$ can be chosen by the [elbow method](https://en.wikipedia.org/wiki/Elbow_method_(clustering)).
+
+The anchor boxes generated by clustering provide better average IoU conditioned on a fixed number of boxes.
+
+**5. Direct location prediction**: YOLOv2 formulates the bounding box prediction in a way that it would *not diverge* from the center location too much. If the box location prediction can place the box in any part of the image, like in regional proposal network, the model training could become unstable.
+
+Given the anchor box of size $$(p_w, p_h)$$ at the grid cell with its top left corner at $$(c_x, c_y)$$, the model predicts the offset and the scale, $$(t_x, t_y, t_w, t_h)$$ and the corresponding predicted bounding box $$b$$ has center $$(b_x, b_y)$$ and size $$(b_w, b_h)$$. The confidence score is the sigmoid ($$\sigma$$) of another output $$t_o$$.
+
+$$
+\begin{aligned}
+b_x &= \sigma(t_x) + c_x\\
+b_y &= \sigma(t_y) + c_y\\
+b_w &= p_w e^{t_w}\\
+b_h &= p_h e^{t_h}\\
+\text{Pr}(\text{object}) &\cdot \text{IoU}(b, \text{object}) = \sigma(t_o)
+\end{aligned}
+$$
+
+![YOLOv2 bbox location prediction]({{ '/assets/images/yolov2-loc-prediction.png' }})
+{: style="width: 50%;" class="center"}
+*Fig. 7. YOLOv2 bounding box location prediction. (Image source: [original paper](https://arxiv.org/abs/1612.08242))*
+
+**6. Add fine-grained features**: YOLOv2 adds a passthrough layer to bring *fine-grained features* from an earlier layer to the last output layer. The mechanism of this passthrough layer is similar to *identity mappings in ResNet* to extract higher-dimensional features from previous layers. This leads to 1% performance increase.
+
+**7. Multi-scale training**: In order to train the model to be robust to input images of different sizes, a *new size* of input dimension is *randomly sampled* every 10 batches. Since conv layers of YOLOv2 downsample the input dimension by a factor of 32, the newly sampled size is a multiple of 32.
+
+**8. Light-weighted base model**: To make prediction even faster, YOLOv2 adopts a light-weighted base model, DarkNet-19, which has 19 conv layers and 5 max-pooling layers. The key point is to insert avg poolings and 1x1 conv filters between 3x3 conv layers.
+
+
+### YOLO9000: Rich Dataset Training
+
+Because drawing bounding boxes on images for object detection is much more expensive than tagging images for classification, the paper proposed a way to combine small object detection dataset with large ImageNet so that the model can be exposed to a much larger number of object categories. The name of YOLO9000 comes from the top 9000 classes in ImageNet. During joint training, if an input image comes from the classification dataset, it only backpropagates the classification loss.
+
+The detection dataset has much fewer and more general labels and, moreover, labels cross multiple datasets are often not mutually exclusive. For example, ImageNet has a label “Persian cat” while in COCO the same image would be labeled as “cat”. Without mutual exclusiveness, it does not make sense to apply softmax over all the classes.
+
+In order to efficiently merge ImageNet labels (1000 classes, fine-grained) with COCO/PASCAL (< 100 classes, coarse-grained), YOLO9000 built a hierarchical tree structure with reference to [WordNet](https://wordnet.princeton.edu/) so that general labels are closer to the root and the fine-grained class labels are leaves. In this way, "cat" is the parent node of "Persian cat".
+
+
+![WordTree]({{ '/assets/images/word-tree.png' }})
+{: style="width:100%;" class="center"}
+*Fig. 8. The WordTree hierarchy merges labels from COCO and ImageNet. Blue nodes are COCO labels and red nodes are ImageNet labels. (Image source: [original paper](https://arxiv.org/abs/1612.08242))*
+
+To predict the probability of a class node, we can follow the path from the node to the root:
+
+```
+Pr("persian cat" | contain a "physical object") 
+= Pr("persian cat" | "cat") 
+  Pr("cat" | "animal") 
+  Pr("animal" | "physical object") 
+  Pr(contain a "physical object")    # confidence score.
+```
+
+Note that `Pr(contain a "physical object")` is the confidence score, predicted separately in the bounding box detection pipeline. The path of conditional probability prediction can stop at any step, depending on which labels are available.
+
