@@ -7,7 +7,7 @@ layout: post
 In [Part 3](https://noba1anc3.github.io/2020/04/15/R-CNN-Family.html), we have reviewed models in the R-CNN family. All of them are region-based object detection algorithms. They can achieve high accuracy but could be too slow for certain applications such as autonomous driving. In Part 4, we only focus on fast object detection models, including SSD, RetinaNet, and models in the YOLO family.
 
 Links to all the posts in the series: 
-[[Part 1]({{ site.baseurl }}{% post_url 2017-10-29-object-recognition-for-dummies-part-1 %})]
+[[Part 1]()]
 [[Part 2](https://noba1anc3.github.io/2020/04/22/CNN,-DPM-and-Overfeat.html)]
 [[Part 3](https://noba1anc3.github.io/2020/04/15/R-CNN-Family.html)]
 [[Part 4](https://noba1anc3.github.io/2020/04/23/Fast-Detection-Models.html)].
