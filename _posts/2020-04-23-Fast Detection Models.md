@@ -348,8 +348,6 @@ As usual, for each anchor box, the model outputs a class probability for each of
 
 <img src="/assets/images/retina-net.png" width="666" height="205" />
 
-![RetinaNet]({{ '/assets/images/retina-net.png' }})
-{: style="width:100%;" class="center"}
 *Fig. 12. The RetinaNet model architecture uses a [FPN](https://arxiv.org/abs/1612.03144) backbone on top of ResNet. (Image source: the [FPN](https://arxiv.org/abs/1612.03144) paper)*
 
 
