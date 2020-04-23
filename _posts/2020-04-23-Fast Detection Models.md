@@ -16,7 +16,6 @@ Links to all the posts in the series:
 * TOC
 {:toc}
 
-
 ## Two-stage vs One-stage Detectors
 
 Models in the R-CNN family are all region-based. The detection happens in two stages: (1) First, the model proposes a set of regions of interests by select search or regional proposal network. The proposed regions are sparse as the potential bounding box candidates can be infinite. (2) Then a classifier only processes the region candidates.
@@ -46,9 +45,8 @@ The **YOLO** model (**"You Only Look Once"**; [Redmon et al., 2016](https://www.
 <br/>
 3. The final layer of the pre-trained CNN is modified to output a prediction tensor of size $$S \times S \times (5B + K)$$.
 
+<img src="/assets/images/yolo.png" width="766" height="400" />
 
-![YOLO workflow]({{ '/assets/images/yolo.png' }})
-{: class="center"}
 *Fig. 1. The workflow of YOLO model. (Image source: [original paper](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf))*
 
 
@@ -56,9 +54,10 @@ The **YOLO** model (**"You Only Look Once"**; [Redmon et al., 2016](https://www.
 
 The base model is similar to [GoogLeNet](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf) with inception module replaced by 1x1 and 3x3 conv layers. The final prediction of shape $$S \times S \times (5B + K)$$ is produced by two fully connected layers over the whole conv feature map.
 
-![YOLO architecture]({{ '/assets/images/yolo-network-architecture.png' }})
-{: class="center"}
+<img src="/assets/images/yolo-network-architecture.png" width="890" height="268" />
+
 *Fig. 2. The network architecture of YOLO.*
+
 
 ### Loss Function
 
@@ -84,9 +83,8 @@ where,
 - $$p_i(c)$$: The conditional probability of whether cell i contains an object of class $$c \in \mathcal{C}$$.
 - $$\hat{p}_i(c)$$: The predicted conditional class probability.
 
+<img src="/assets/images/yolo-responsible-predictor.png" width="658" height="331" />
 
-![YOLO responsible predictor]({{ '/assets/images/yolo-responsible-predictor.png' }})
-{: style="width: 85%;" class="center"}
 *Fig. 3. At one location, in cell i, the model proposes B bounding box candidates and the one that has highest overlap with the ground truth is the "responsible" predictor.*
 
 The loss function only penalizes classification error if an object is present in that grid cell, $$\mathbb{1}_i^\text{obj} = 1$$. It also only penalizes bounding box coordinate error if that predictor is "responsible" for the ground truth box, $$\mathbb{1}_{ij}^\text{obj} = 1$$.
@@ -97,8 +95,6 @@ As a one-stage object detector, YOLO is super fast, but it is not good at recogn
 ## SSD: Single Shot MultiBox Detector
 
 The **Single Shot Detector** (**SSD**; [Liu et al, 2016](https://arxiv.org/abs/1512.02325)) is one of the first attempts at using convolutional neural network's pyramidal feature hierarchy for efficient detection of objects of various sizes.
-
-
 
 ### Image Pyramid
 
