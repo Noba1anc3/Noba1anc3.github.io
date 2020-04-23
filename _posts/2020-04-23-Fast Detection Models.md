@@ -124,37 +124,33 @@ Feature maps at different levels have different receptive field sizes. The ancho
 
 The width, height and the center location of an anchor box are all normalized to be (0, 1). At a location $$(i, j)$$ of the $$\ell$$-th feature layer of size $$m \times n$$, $$i=1,\dots,n, j=1,\dots,m$$, we have a unique linear scale proportional to the layer level and 5 different box aspect ratios (width-to-height ratios), in addition to a special scale (why we need this? the paper didn’t explain. maybe just a heuristic trick) when the aspect ratio is 1. This gives us 6 anchor boxes in total per feature cell.
 
+
+
 $$
 \begin{aligned}
-\text{level index: } &\ell = 1, \dots, L \\
-\text{scale of boxes: } &s_\ell = s_\text{min} + \frac{s_\text{max} - s_\text{min}}{L - 1} (\ell - 1) \\
-\text{aspect ratio: } &r \in \{1, 2, 3, 1/2, 1/3\}\\
-\text{additional scale: } & s'_\ell = \sqrt{s_\ell s_{\ell + 1}} \text{ when } r = 1 \text{thus, 6 boxes in total.}\\
-\text{width: } &w_\ell^r = s_\ell \sqrt{r} \\
-\text{height: } &h_\ell^r = s_\ell / \sqrt{r} \\
-\text{center location: } & (x^i_\ell, y^j_\ell) = (\frac{i+0.5}{m}, \frac{j+0.5}{n})
+\mathcal{L}_\text{loc} &= \sum_{i,j} \sum_{m\in\{x, y, w, h\}} \mathbb{1}_{ij}^\text{match}
+ L_1^\text{smooth}(d_m^i - t_m^j)^2\\
+L_1^\text{smooth}(x) &= \begin{cases}
+    0.5 x^2             & \text{if } \vert x \vert < 1\\
+    \vert x \vert - 0.5 & \text{otherwise}
+\end{cases} \\
+t^j_x &= (g^j_x - p^i_x) / p^i_w \\
+t^j_y &= (g^j_y - p^i_y) / p^i_h \\
+t^j_w &= \log(g^j_w / p^i_w) \\
+t^j_h &= \log(g^j_h / p^i_h)
 \end{aligned}
 $$
 
+where $$\mathbb{1}_{ij}^\text{match}$$ indicates whether the $$i$$-th bounding box with coordinates $$(p^i_x, p^i_y, p^i_w, p^i_h)$$ is matched to the $$j$$-th ground truth box with coordinates $$(g^j_x, g^j_y, g^j_w, g^j_h)$$ for any object. $$d^i_m, m\in\{x, y, w, h\}$$ are the predicted correction terms. See [this]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression) for how the transformation works.
 
-![Box scales]({{ '/assets/images/SSD-box-scales.png' }})
-{: class="center"}
-*Fig. 6. An example of how the anchor box size is scaled up with the layer index $$\ell$$ for $$L=6, s_\text{min} = 0.2, s_\text{max} = 0.9$$. Only the boxes of aspect ratio $$r=1$$ are illustrated.*
-
-
-At every location, the model outputs 4 offsets and $$c$$ class probabilities by applying a $$3 \times 3 \times p$$ conv filter (where $$p$$ is the number of channels in the feature map) for every one of $$k$$ anchor boxes. Therefore, given a feature map of size $$m \times n$$, we need $$kmn(c+4)$$ prediction filters.
+The *classification loss* is a softmax loss over multiple classes ([softmax_cross_entropy_with_logits](https://www.tensorflow.org/api_docs/python/tf/nn/softmax_cross_entropy_with_logits) in tensorflow):
 
 
-### Loss Function
+$$
+\mathcal{L}_\text{cls} = -\sum_{i \in \text{pos}} \mathbb{1}_{ij}^k \log(\hat{c}_i^k) - \sum_{i \in \text{neg}} \log(\hat{c}_i^0)\text{, where }\hat{c}_i^k = \text{softmax}(c_i^k)
+$$
 
-Same as YOLO, the loss function is the sum of a localization loss and a classification loss.
-
-$$\mathcal{L} = \frac{1}{N}(\mathcal{L}_\text{cls} + \alpha \mathcal{L}_\text{loc})$$
-
-where $$N$$ is the number of matched bounding boxes and $$\alpha$$ balances the weights between two losses, picked by cross validation.
-
-The *localization loss* is a [smooth L1 loss](https://github.com/rbgirshick/py-faster-rcnn/files/764206/SmoothL1Loss.1.pdf) between the predicted bounding box correction and the true values. The coordinate correction transformation is same as what [R-CNN]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#r-cnn) does in [bounding box regression]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression).
-
+where $$\mathbb{1}_{ij}^k$$ indicates whether the $$i$$-th bounding box and the $$j$$-th ground truth box are matched for an object in class $$k$$. $$\text{pos}$$ is the set of matched bounding boxes ($$N$$ items in total) and  $$\text{neg}$$ is the set of negative examples. SSD uses [hard negative mining]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#common-tricks) to select easily misclassified negative examples to construct this $$\text{neg}$$ set: Once all the anchor boxes are sorted by objectiveness confidence score, the model picks the top candidates for training so that neg:pos is at most 3:1.
 
 ## YOLOv2 / YOLO9000
 
