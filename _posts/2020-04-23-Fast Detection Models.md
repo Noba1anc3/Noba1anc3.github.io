@@ -60,8 +60,54 @@ The base model is similar to [GoogLeNet](https://www.cs.unc.edu/~wliu/papers/Goo
 {: class="center"}
 *Fig. 2. The network architecture of YOLO.*
 
+### Loss Function
+
+The loss consists of two parts, the *localization loss* for bounding box offset prediction and the *classification loss* for conditional class probabilities. Both parts are computed as the sum of squared errors. Two scale parameters are used to control how much we want to increase the loss from bounding box coordinate predictions ($$\lambda_\text{coord}$$) and how much we want to decrease the loss of confidence score predictions for boxes without objects ($$\lambda_\text{noobj}$$). Down-weighting the loss contributed by background boxes is important as most of the bounding boxes involve no instance. In the paper, the model sets $$\lambda_\text{coord} = 5$$ and $$\lambda_\text{noobj} = 0.5$$.
 
 
+$$
+\begin{aligned}
+\mathcal{L}_\text{loc} &= \lambda_\text{coord} \sum_{i=0}^{S^2} \sum_{j=0}^B \mathbb{1}_{ij}^\text{obj} [(x_i - \hat{x}_i)^2 + (y_i - \hat{y}_i)^2 + (\sqrt{w_i} - \sqrt{\hat{w}_i})^2 + (\sqrt{h_i} - \sqrt{\hat{h}_i})^2 ] \\
+\mathcal{L}_\text{cls}  &= \sum_{i=0}^{S^2} \sum_{j=0}^B \big( \mathbb{1}_{ij}^\text{obj} + \lambda_\text{noobj} (1 - \mathbb{1}_{ij}^\text{obj})\big) (C_{ij} - \hat{C}_{ij})^2 + \sum_{i=0}^{S^2} \sum_{c \in \mathcal{C}} \mathbb{1}_i^\text{obj} (p_i(c) - \hat{p}_i(c))^2\\
+\mathcal{L} &= \mathcal{L}_\text{loc} + \mathcal{L}_\text{cls}
+\end{aligned}
+$$
+
+> NOTE: In the original YOLO paper, the loss function uses $$C_i$$ instead of $$C_{ij}$$ as confidence score. I made the correction based on my own understanding, since every bounding box should have its own confidence score. Please kindly let me if you do not agree. Many thanks.
+
+where,
+- $$\mathbb{1}_i^\text{obj}$$: An indicator function of whether the cell i contains an object.
+- $$\mathbb{1}_{ij}^\text{obj}$$: It indicates whether the j-th bounding box of the cell i is "responsible" for the object prediction (see Fig. 3).
+- $$C_{ij}$$: The confidence score of cell i, `Pr(containing an object) * IoU(pred, truth)`.
+- $$\hat{C}_{ij}$$: The predicted confidence score.
+- $$\mathcal{C}$$: The set of all classes.
+- $$p_i(c)$$: The conditional probability of whether cell i contains an object of class $$c \in \mathcal{C}$$.
+- $$\hat{p}_i(c)$$: The predicted conditional class probability.
+
+
+![YOLO responsible predictor]({{ '/assets/images/yolo-responsible-predictor.png' }})
+{: style="width: 85%;" class="center"}
+*Fig. 3. At one location, in cell i, the model proposes B bounding box candidates and the one that has highest overlap with the ground truth is the "responsible" predictor.*
+
+The loss function only penalizes classification error if an object is present in that grid cell, $$\mathbb{1}_i^\text{obj} = 1$$. It also only penalizes bounding box coordinate error if that predictor is "responsible" for the ground truth box, $$\mathbb{1}_{ij}^\text{obj} = 1$$.
+
+As a one-stage object detector, YOLO is super fast, but it is not good at recognizing irregularly shaped objects or a group of small objects due to a limited number of bounding box candidates.
+
+
+## SSD: Single Shot MultiBox Detector
+
+The **Single Shot Detector** (**SSD**; [Liu et al, 2016](https://arxiv.org/abs/1512.02325)) is one of the first attempts at using convolutional neural network's pyramidal feature hierarchy for efficient detection of objects of various sizes.
+
+
+### Image Pyramid
+
+SSD uses the [VGG-16](https://arxiv.org/abs/1409.1556) model pre-trained on ImageNet as its base model for extracting useful image features.
+On top of VGG16, SSD adds several conv feature layers of decreasing sizes. They can be seen as a *pyramid representation* of images at different scales. Intuitively large fine-grained feature maps at earlier levels are good at capturing small objects and small coarse-grained feature maps can detect large objects well. In SSD, the detection happens in every pyramidal layer, targeting at objects of various sizes. 
+
+
+![SSD architecture]({{ '/assets/images/SSD-architecture.png' }})
+{: class="center"}
+*Fig. 4. The model architecture of SSD.*
 
 
 ## YOLOv2 / YOLO9000
