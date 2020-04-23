@@ -148,13 +148,33 @@ At every location, the model outputs 4 offsets and $$c$$ class probabilities by 
 
 ### Loss Function
 
-Same as YOLO, the loss function is the sum of a localization loss and a classification loss.
 
-$$\mathcal{L} = \frac{1}{N}(\mathcal{L}_\text{cls} + \alpha \mathcal{L}_\text{loc})$$
 
-where $$N$$ is the number of matched bounding boxes and $$\alpha$$ balances the weights between two losses, picked by cross validation.
+$$
+\begin{aligned}
+\mathcal{L}_\text{loc} &= \sum_{i,j} \sum_{m\in\{x, y, w, h\}} \mathbb{1}_{ij}^\text{match}
+ L_1^\text{smooth}(d_m^i - t_m^j)^2\\
+L_1^\text{smooth}(x) &= \begin{cases}
+    0.5 x^2             & \text{if } \vert x \vert < 1\\
+    \vert x \vert - 0.5 & \text{otherwise}
+\end{cases} \\
+t^j_x &= (g^j_x - p^i_x) / p^i_w \\
+t^j_y &= (g^j_y - p^i_y) / p^i_h \\
+t^j_w &= \log(g^j_w / p^i_w) \\
+t^j_h &= \log(g^j_h / p^i_h)
+\end{aligned}
+$$
 
-The *localization loss* is a [smooth L1 loss](https://github.com/rbgirshick/py-faster-rcnn/files/764206/SmoothL1Loss.1.pdf) between the predicted bounding box correction and the true values. The coordinate correction transformation is same as what [R-CNN]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#r-cnn) does in [bounding box regression]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression).
+where $$\mathbb{1}_{ij}^\text{match}$$ indicates whether the $$i$$-th bounding box with coordinates $$(p^i_x, p^i_y, p^i_w, p^i_h)$$ is matched to the $$j$$-th ground truth box with coordinates $$(g^j_x, g^j_y, g^j_w, g^j_h)$$ for any object. $$d^i_m, m\in\{x, y, w, h\}$$ are the predicted correction terms. See [this]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression) for how the transformation works.
+
+The *classification loss* is a softmax loss over multiple classes ([softmax_cross_entropy_with_logits](https://www.tensorflow.org/api_docs/python/tf/nn/softmax_cross_entropy_with_logits) in tensorflow):
+
+
+$$
+\mathcal{L}_\text{cls} = -\sum_{i \in \text{pos}} \mathbb{1}_{ij}^k \log(\hat{c}_i^k) - \sum_{i \in \text{neg}} \log(\hat{c}_i^0)\text{, where }\hat{c}_i^k = \text{softmax}(c_i^k)
+$$
+
+where $$\mathbb{1}_{ij}^k$$ indicates whether the $$i$$-th bounding box and the $$j$$-th ground truth box are matched for an object in class $$k$$. $$\text{pos}$$ is the set of matched bounding boxes ($$N$$ items in total) and  $$\text{neg}$$ is the set of negative examples. SSD uses [hard negative mining]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#common-tricks) to select easily misclassified negative examples to construct this $$\text{neg}$$ set: Once all the anchor boxes are sorted by objectiveness confidence score, the model picks the top candidates for training so that neg:pos is at most 3:1.
 
 ## YOLOv2 / YOLO9000
 
