@@ -346,6 +346,7 @@ There are A=9 anchor boxes per level:
 
 As usual, for each anchor box, the model outputs a class probability for each of $$K$$ classes in the classification subnet and regresses the offset from this anchor box to the nearest ground truth object in the box regression subnet. The classification subnet adopts the focal loss introduced above.
 
+<img src="/assets/images/retina-net.png" width="666" height="205" />
 
 ![RetinaNet]({{ '/assets/images/retina-net.png' }})
 {: style="width:100%;" class="center"}
@@ -372,8 +373,8 @@ Interestingly, focal loss does not help YOLOv3, potentially it might be due to t
 
 Overall YOLOv3 performs better and faster than SSD, and worse than RetinaNet but 3.8x faster.
 
-![YOLOv3 performance]({{ '/assets/images/yolov3-perf.png' }})
-{: style="width:80%;" class="center"}
+<img src="/assets/images/yolov3-perf.png" width="630" height="381" />
+
 *Fig. 13. The comparison of various fast object detection models on speed and mAP performance. (Image source: [focal loss](https://arxiv.org/abs/1708.02002) paper with additional labels from the [YOLOv3](https://pjreddie.com/media/files/papers/YOLOv3.pdf) paper.)*
 
 ---
