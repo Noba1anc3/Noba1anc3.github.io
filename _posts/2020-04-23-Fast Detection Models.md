@@ -141,6 +141,20 @@ $$
 {: class="center"}
 *Fig. 6. An example of how the anchor box size is scaled up with the layer index $$\ell$$ for $$L=6, s_\text{min} = 0.2, s_\text{max} = 0.9$$. Only the boxes of aspect ratio $$r=1$$ are illustrated.*
 
+At every location, the model outputs 4 offsets and $$c$$ class probabilities by applying a $$3 \times 3 \times p$$ conv filter (where $$p$$ is the number of channels in the feature map) for every one of $$k$$ anchor boxes. Therefore, given a feature map of size $$m \times n$$, we need $$kmn(c+4)$$ prediction filters.
+
+
+### Loss Function
+
+Same as YOLO, the loss function is the sum of a localization loss and a classification loss.
+
+$$\mathcal{L} = \frac{1}{N}(\mathcal{L}_\text{cls} + \alpha \mathcal{L}_\text{loc})$$
+
+where $$N$$ is the number of matched bounding boxes and $$\alpha$$ balances the weights between two losses, picked by cross validation.
+
+The *localization loss* is a [smooth L1 loss](https://github.com/rbgirshick/py-faster-rcnn/files/764206/SmoothL1Loss.1.pdf) between the predicted bounding box correction and the true values. The coordinate correction transformation is same as what [R-CNN]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#r-cnn) does in [bounding box regression]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression).
+
+
 ## YOLOv2 / YOLO9000
 
 **YOLOv2** ([Redmon & Farhadi, 2017](https://arxiv.org/abs/1612.08242)) is an enhanced version of YOLO. **YOLO9000** is built on top of YOLOv2 but trained with joint dataset combining the COCO detection dataset and the top 9000 classes from ImageNet.
