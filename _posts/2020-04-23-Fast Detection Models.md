@@ -100,42 +100,51 @@ The **Single Shot Detector** (**SSD**; [Liu et al, 2016](https://arxiv.org/abs/1
 
 
 
+### Image Pyramid
 
-### Loss Function
+SSD uses the [VGG-16](https://arxiv.org/abs/1409.1556) model pre-trained on ImageNet as its base model for extracting useful image features.
+On top of VGG16, SSD adds several conv feature layers of decreasing sizes. They can be seen as a *pyramid representation* of images at different scales. Intuitively large fine-grained feature maps at earlier levels are good at capturing small objects and small coarse-grained feature maps can detect large objects well. In SSD, the detection happens in every pyramidal layer, targeting at objects of various sizes. 
 
-Same as YOLO, the loss function is the sum of a localization loss and a classification loss.
 
-$$\mathcal{L} = \frac{1}{N}(\mathcal{L}_\text{cls} + \alpha \mathcal{L}_\text{loc})$$
+![SSD architecture]({{ '/assets/images/SSD-architecture.png' }})
+{: class="center"}
+*Fig. 4. The model architecture of SSD.*
 
-where $$N$$ is the number of matched bounding boxes and $$\alpha$$ balances the weights between two losses, picked by cross validation.
 
-The *localization loss* is a [smooth L1 loss](https://github.com/rbgirshick/py-faster-rcnn/files/764206/SmoothL1Loss.1.pdf) between the predicted bounding box correction and the true values. The coordinate correction transformation is same as what [R-CNN]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#r-cnn) does in [bounding box regression]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression).
+
+### Workflow
+
+Unlike YOLO, SSD does not split the image into grids of arbitrary size but predicts offset of predefined *anchor boxes* (this is called "default boxes" in the paper) for every location of the feature map. Each box has a fixed size and position relative to its corresponding cell. All the anchor boxes tile the whole feature map in a convolutional manner.
+
+Feature maps at different levels have different receptive field sizes. The anchor boxes on different levels are rescaled so that one feature map is only responsible for objects at one particular scale. For example, in Fig. 5 the dog can only be detected in the 4x4 feature map (higher level) while the cat is just captured by the 8x8 feature map (lower level).
+
+![SSD framework]({{ '/assets/images/SSD-framework.png' }})
+{: class="center"}
+*Fig. 5. The SSD framework. (a) The training data contains images and ground truth boxes for every object. (b) In a fine-grained feature maps (8 x 8), the anchor boxes of different aspect ratios correspond to smaller area of the raw input. (c) In a coarse-grained feature map (4 x 4), the anchor boxes cover larger area of the raw input. (Image source: [original paper](https://arxiv.org/abs/1512.02325))*
+
+
+The width, height and the center location of an anchor box are all normalized to be (0, 1). At a location $$(i, j)$$ of the $$\ell$$-th feature layer of size $$m \times n$$, $$i=1,\dots,n, j=1,\dots,m$$, we have a unique linear scale proportional to the layer level and 5 different box aspect ratios (width-to-height ratios), in addition to a special scale (why we need this? the paper didn’t explain. maybe just a heuristic trick) when the aspect ratio is 1. This gives us 6 anchor boxes in total per feature cell.
+
 
 $$
 \begin{aligned}
-\mathcal{L}_\text{loc} &= \sum_{i,j} \sum_{m\in\{x, y, w, h\}} \mathbb{1}_{ij}^\text{match}
- L_1^\text{smooth}(d_m^i - t_m^j)^2\\
-L_1^\text{smooth}(x) &= \begin{cases}
-    0.5 x^2             & \text{if } \vert x \vert < 1\\
-    \vert x \vert - 0.5 & \text{otherwise}
-\end{cases} \\
-t^j_x &= (g^j_x - p^i_x) / p^i_w \\
-t^j_y &= (g^j_y - p^i_y) / p^i_h \\
-t^j_w &= \log(g^j_w / p^i_w) \\
-t^j_h &= \log(g^j_h / p^i_h)
+\text{level index: } &\ell = 1, \dots, L \\
+\text{scale of boxes: } &s_\ell = s_\text{min} + \frac{s_\text{max} - s_\text{min}}{L - 1} (\ell - 1) \\
+\text{aspect ratio: } &r \in \{1, 2, 3, 1/2, 1/3\}\\
+\text{additional scale: } & s'_\ell = \sqrt{s_\ell s_{\ell + 1}} \text{ when } r = 1 \text{thus, 6 boxes in total.}\\
+\text{width: } &w_\ell^r = s_\ell \sqrt{r} \\
+\text{height: } &h_\ell^r = s_\ell / \sqrt{r} \\
+\text{center location: } & (x^i_\ell, y^j_\ell) = (\frac{i+0.5}{m}, \frac{j+0.5}{n})
 \end{aligned}
 $$
 
-where $$\mathbb{1}_{ij}^\text{match}$$ indicates whether the $$i$$-th bounding box with coordinates $$(p^i_x, p^i_y, p^i_w, p^i_h)$$ is matched to the $$j$$-th ground truth box with coordinates $$(g^j_x, g^j_y, g^j_w, g^j_h)$$ for any object. $$d^i_m, m\in\{x, y, w, h\}$$ are the predicted correction terms. See [this]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#bounding-box-regression) for how the transformation works.
 
-The *classification loss* is a softmax loss over multiple classes ([softmax_cross_entropy_with_logits](https://www.tensorflow.org/api_docs/python/tf/nn/softmax_cross_entropy_with_logits) in tensorflow):
+![Box scales]({{ '/assets/images/SSD-box-scales.png' }})
+{: class="center"}
+*Fig. 6. An example of how the anchor box size is scaled up with the layer index $$\ell$$ for $$L=6, s_\text{min} = 0.2, s_\text{max} = 0.9$$. Only the boxes of aspect ratio $$r=1$$ are illustrated.*
 
 
-$$
-\mathcal{L}_\text{cls} = -\sum_{i \in \text{pos}} \mathbb{1}_{ij}^k \log(\hat{c}_i^k) - \sum_{i \in \text{neg}} \log(\hat{c}_i^0)\text{, where }\hat{c}_i^k = \text{softmax}(c_i^k)
-$$
-
-where $$\mathbb{1}_{ij}^k$$ indicates whether the $$i$$-th bounding box and the $$j$$-th ground truth box are matched for an object in class $$k$$. $$\text{pos}$$ is the set of matched bounding boxes ($$N$$ items in total) and  $$\text{neg}$$ is the set of negative examples. SSD uses [hard negative mining]({{ site.baseurl }}{% post_url 2017-12-31-object-recognition-for-dummies-part-3 %}#common-tricks) to select easily misclassified negative examples to construct this $$\text{neg}$$ set: Once all the anchor boxes are sorted by objectiveness confidence score, the model picks the top candidates for training so that neg:pos is at most 3:1.
+At every location, the model outputs 4 offsets and $$c$$ class probabilities by applying a $$3 \times 3 \times p$$ conv filter (where $$p$$ is the number of channels in the feature map) for every one of $$k$$ anchor boxes. Therefore, given a feature map of size $$m \times n$$, we need $$kmn(c+4)$$ prediction filters.
 
 ## YOLOv2 / YOLO9000
 
