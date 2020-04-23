@@ -285,8 +285,8 @@ $$
 \text{FL}(p_t) = -(1-p_t)^\gamma \log p_t
 $$
 
-![Focal Loss]({{ '/assets/images/focal-loss.png' }})
-{: style="width:65%;" class="center"}
+<img src="/assets/images/focal-loss.png" width="646" height="413" />
+
 *Fig. 9. The focal loss focuses less on easy examples with a factor of $$(1-p_t)^\gamma$$. (Image source: [original paper](https://arxiv.org/abs/1708.02002))*
 
 
@@ -307,9 +307,8 @@ The **featurized image pyramid** ([Lin et al., 2017](https://arxiv.org/abs/1612.
 
 The key idea of feature pyramid network is demonstrated in Fig. 11. The base structure contains a sequence of *pyramid levels*, each corresponding to one network *stage*. One stage contains multiple convolutional layers of the same size and the stage sizes are scaled down by a factor of 2. Let's denote the last layer of the $$i$$-th stage as $$C_i$$.
 
+<img src="/assets/images/featurized-image-pyramid.png" width="651" height="341" />
 
-![Featurized image pyramid]({{ '/assets/images/featurized-image-pyramid.png' }})
-{: style="width:100%;" class="center"}
 *Fig. 11. The illustration of the featurized image pyramid module. (Replot based on figure 3 in [FPN paper](https://arxiv.org/abs/1612.03144))*
 
 
