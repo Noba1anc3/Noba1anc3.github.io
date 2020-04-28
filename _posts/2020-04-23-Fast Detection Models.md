@@ -38,7 +38,7 @@ The **YOLO** model (**"You Only Look Once"**; [Redmon et al., 2016](https://www.
 <br/>
 <br/>
 - The **coordinates** of bounding box are defined by a tuple of 4 values, (center x-coord, center y-coord, width, height) --- $$(x, y, w, h)$$, where $$x$$ and $$y$$ are set to be offset of a cell location. Moreover, $$x$$, $$y$$, $$w$$ and $$h$$ are normalized by the image width and height, and thus all between (0, 1].
-- A **confidence score** indicates the likelihood that the cell contains an object: `Pr(containing an object) x IoU(pred, truth)`; where `Pr` = probability and `IoU` = interaction under union.
+- A **confidence score** indicates the likelihood that the cell contains an object: `Pr(containing an object) x IoU(pred, truth)`; where `Pr` = probability and `IoU` = interaction over union.
 - If the cell contains an object, it predicts a **probability** of this object belonging to every class $$C_i, i=1, \dots, K$$: `Pr(the object belongs to the class C_i | containing an object)`. At this stage, the model only predicts one set of class probabilities per cell, regardless of the number of bounding boxes, $$B$$.
 - In total, one image contains $$S \times S \times B$$ bounding boxes, each box corresponding to 4 location predictions, 1 confidence score, and K conditional probabilities for object classification. The total prediction values for one image is $$S \times S \times (5B + K)$$, which is the tensor shape of the final conv layer of the model.
 <br/>
