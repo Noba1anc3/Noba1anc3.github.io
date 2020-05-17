@@ -60,13 +60,13 @@ The authors describe it as:
  as the parameters of the previous layers change.
 ```
 
-Their answer to this problem was to apply to the pre-activation a Batch Normalization (BN):
-$$BN(x) = \gamma \frac{x - \mu_B}{\sigma_B} + \beta$$
+Their answer to this problem was to apply to the pre-activation a Batch Normalization (BN):  
+$$BN(x) = \gamma \frac{x - \mu_B}{\sigma_B} + \beta$$  
 $$\mu_B$$ and $$\sigma_B$$ are the mean and the standard deviation of the batch. $$\gamma$$ and $$\beta$$ are learned parameters.
 
-The batch statistics are computed for a whole channel:
+The batch statistics are computed for a whole channel:  
 ![](https://arthurdouillard.com/figures/batch_norm.png)
-*Statistics are computed for a whole batch, channel per channel.*
+*Fig. 1. Statistics are computed for a whole batch, channel per channel.*
 
 $$\gamma$$ and $$\beta$$ are essential because they enable the BN to represent the identity transform if needed. If it couldn’t, the resulting BN’s transformation (with a mean of 0 and a variance of 1) fed to a sigmoid non-linearity would be constrained to its linear regime.
 
@@ -82,9 +82,9 @@ BN uses the statistics $$(\mu_B & \sigma_B)$$ of the batch. BR introduces two ne
 Ideally the normalization should be done with the instance’s statistic:
 
 $$\hat{x} = \frac{x - \mu}{\sigma}$$
-By choosing $$r = \frac{\sigma_B}{\sigma} and d = \frac{\mu_B - \mu}{\sigma}$$:
+By choosing $$r = \frac{\sigma_B}{\sigma}$$ and $$d = \frac{\mu_B - \mu}{\sigma}$$:
 
-$$\hat{x} = \frac{x - \mu}{\sigma} = \frac{x - \mu_B}{\sigma_B} \cdot r + d$$
+$$\hat{x} = \frac{x - \mu}{\sigma} = \frac{x - \mu_B}{\sigma_B} \cdot r + d$$  
 The authors advise to constrain the maximum absolute values of r and d. At first to 1 and 0, behaving like BN, then to relax gradually those bounds.
 
 ## Internal Covariate Shift?
