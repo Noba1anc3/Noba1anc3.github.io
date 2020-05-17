@@ -15,17 +15,20 @@ This article is not exhaustive but it tries to cover the major algorithms. If yo
 ## Normalizing the input
 It is extremely common to normalize the input [(lecun-98b)](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf), especially for computer vision tasks. Three normalization schemes are often seen:
 1. Normalizing the pixel values between 0 and 1:
+
 ```
 img /= 255.
 ```
 
 2. Normalizing the pixel values between -1 and 1 (as [Tensorflow does](https://github.com/keras-team/keras-applications/blob/master/keras_applications/imagenet_utils.py#L42-L45)):
+
 ```
 img /= 127.5
 img -= 1.
 ```
 
 3. Normalizing according to the dataset mean & standard deviation (as [Torch does](https://github.com/keras-team/keras-applications/blob/master/keras_applications/imagenet_utils.py#L47-L50)):
+
 ```
 img /= 255.
 mean = [0.485, 0.456, 0.406] # Here it's ImageNet statistics
@@ -36,11 +39,11 @@ for i in range(3): # Considering an ordering NCHW (batch, channel, height, width
     img[i, :, :] /= std[i]
 ```
 
-Why is it recommended? Let’s take a neuron, where:
-$$y = w \cdot x$$
+Why is it recommended? Let’s take a neuron, where: $$y = w \cdot x$$
 
 The partial derivative of $$y$$ for $$w$$ that we use during backpropagation is:
 $$\frac{\partial y}{\partial w} = X^T$$
+
 
 ---
 Cited as:
