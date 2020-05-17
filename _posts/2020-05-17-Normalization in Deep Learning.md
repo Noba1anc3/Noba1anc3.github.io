@@ -39,11 +39,55 @@ for i in range(3): # Considering an ordering NCHW (batch, channel, height, width
     img[i, :, :] /= std[i]
 ```
 
-Why is it recommended? Let’s take a neuron, where: $$y = w \cdot x$$
+Why is it recommended? Let’s take a neuron, where:  
+$$y = w \cdot x$$
 
-The partial derivative of $$y$$ for $$w$$ that we use during backpropagation is:
+The partial derivative of $$y$$ for $$w$$ that we use during backpropagation is:  
 $$\frac{\partial y}{\partial w} = X^T$$
 
+The scale of the data has an effect on the magnitude of the gradient for the weights. If the gradient is big, you should reduce the learning rate. However you usually have different gradient magnitudes in a same batch. Normalizing the image to smaller pixel values is a cheap price to pay while making easier to tune an optimal learning rate for input images.
+
+## Batch Normalization
+
+We’ve seen previously how to normalize the input, now let’s see a normalization inside the network.
+
+([Ioffe & Szegedy, 2015](https://arxiv.org/abs/1502.03167)) declared that DNN training was suffering from the internal covariate shift.
+
+The authors describe it as:
+
+```
+[…] the distribution of each layer’s inputs changes during training,
+ as the parameters of the previous layers change.
+```
+
+Their answer to this problem was to apply to the pre-activation a Batch Normalization (BN):
+$$BN(x) = \gamma \frac{x - \mu_B}{\sigma_B} + \beta$$
+$$\mu_B$$ and $$\sigma_B$$ are the mean and the standard deviation of the batch. $$\gamma$$ and $$\beta$$ are learned parameters.
+
+The batch statistics are computed for a whole channel:
+![](https://arthurdouillard.com/figures/batch_norm.png)
+*Statistics are computed for a whole batch, channel per channel.*
+
+$$\gamma$$ and $$\beta$$ are essential because they enable the BN to represent the identity transform if needed. If it couldn’t, the resulting BN’s transformation (with a mean of 0 and a variance of 1) fed to a sigmoid non-linearity would be constrained to its linear regime.
+
+While during training the mean and standard deviation are computed on the batch, during test time BN uses the whole dataset statistics using a moving average/std.
+
+Batch Normalization has showed a considerable training acceleration to existing architectures and is now an almost de facto layer. It has however for weakness to use the batch statistics at training time: With small batches or with a dataset non [i.i.d](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables) it shows weak performance. In addition to that, the difference between training and test time of the mean and the std can be important, this can lead to a difference of performance between the two modes.
+
+## Batch Renormalization
+([Ioffe, 2017](https://arxiv.org/abs/1702.03275))’s Batch Renormalization (BR) introduces an improvement over Batch Normalization.
+
+BN uses the statistics $$(\mu_B & \sigma_B)$$ of the batch. BR introduces two new parameters r & d aiming to constrain the mean and std of BN, reducing the extreme difference when the batch size is small.
+
+Ideally the normalization should be done with the instance’s statistic:
+
+$$\hat{x} = \frac{x - \mu}{\sigma}$$
+By choosing $$r = \frac{\sigma_B}{\sigma} and d = \frac{\mu_B - \mu}{\sigma}$$:
+
+$$\hat{x} = \frac{x - \mu}{\sigma} = \frac{x - \mu_B}{\sigma_B} \cdot r + d$$
+The authors advise to constrain the maximum absolute values of r and d. At first to 1 and 0, behaving like BN, then to relax gradually those bounds.
+
+## Internal Covariate Shift?
 
 ---
 Cited as:
