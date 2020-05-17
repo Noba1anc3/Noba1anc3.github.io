@@ -41,6 +41,7 @@ $$y = w \cdot x$$
 
 The partial derivative of $$y$$ for $$w$$ that we use during backpropagation is:
 $$\frac{\partial y}{\partial w} = X^T$$
+
 ---
 Cited as:
 ```
