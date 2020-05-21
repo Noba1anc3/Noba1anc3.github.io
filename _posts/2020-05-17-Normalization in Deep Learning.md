@@ -39,10 +39,12 @@ for i in range(3): # Considering an ordering NCHW (batch, channel, height, width
     img[i, :, :] /= std[i]
 ```
 
-Why is it recommended? Let’s take a neuron, where:  
+Why is it recommended? Let’s take a neuron, where:
+
 $$y = w \cdot x$$
 
-The partial derivative of $$y$$ for $$w$$ that we use during backpropagation is:  
+The partial derivative of $$y$$ for $$w$$ that we use during backpropagation is:
+
 $$\frac{\partial y}{\partial w} = X^T$$
 
 The scale of the data has an effect on the magnitude of the gradient for the weights. If the gradient is big, you should reduce the learning rate. However you usually have different gradient magnitudes in a same batch. Normalizing the image to smaller pixel values is a cheap price to pay while making easier to tune an optimal learning rate for input images.
@@ -60,8 +62,10 @@ The authors describe it as:
  as the parameters of the previous layers change.
 ```
 
-Their answer to this problem was to apply to the pre-activation a Batch Normalization (BN):  
-$$BN(x) = \gamma \frac{x - \mu_B}{\sigma_B} + \beta$$  
+Their answer to this problem was to apply to the pre-activation a Batch Normalization (BN):
+
+$$BN(x) = \gamma \frac{x - \mu_B}{\sigma_B} + \beta$$
+
 $$\mu_B$$ and $$\sigma_B$$ are the mean and the standard deviation of the batch. $$\gamma$$ and $$\beta$$ are learned parameters.
 
 The batch statistics are computed for a whole channel:  
@@ -83,9 +87,11 @@ BN uses the statistics $$\hat{x} = \frac{x - \mu}{\sigma}$$ of the batch. BR int
 Ideally the normalization should be done with the instance’s statistic:
 
 $$\hat{x} = \frac{x - \mu}{\sigma}$$
+
 By choosing $$r = \frac{\sigma_B}{\sigma}$$ and $$d = \frac{\mu_B - \mu}{\sigma}$$:
 
-$$\hat{x} = \frac{x - \mu}{\sigma} = \frac{x - \mu_B}{\sigma_B} \cdot r + d$$  
+$$\hat{x} = \frac{x - \mu}{\sigma} = \frac{x - \mu_B}{\sigma_B} \cdot r + d$$
+
 The authors advise to constrain the maximum absolute values of r and d. At first to 1 and 0, behaving like BN, then to relax gradually those bounds.
 
 ## 1.2 Internal Covariate Shift?
@@ -109,24 +115,21 @@ On the other hand they found that the Batch Normalization improved the Lipschitz
 
 According to the authors:
 ```
-Improved Lipschitzness of the gradients gives us confidence that 
-when we take a larger step in a direction of a computed gradient, 
-this gradient direction remains a fairly accurate estimate of the 
-actual gradient direction after taking that step. It thus enables 
-any (gradient–based) training algorithm to take larger steps
-without the danger of running into a sudden change of the loss 
-landscape such as flat region (corresponding to vanishing gradient)
+Improved Lipschitzness of the gradients gives us confidence that when we take a larger step 
+in a direction of a computed gradient, this gradient direction remains a fairly accurate 
+estimate of the actual gradient direction after taking that step. It thus enables any 
+(gradient–based) training algorithm to take larger steps without the danger of running 
+into a sudden change of the loss landscape such as flat region (corresponding to vanishing gradient) 
 or sharp local minimum (causing exploding gradients).
 ```
 
 The authors also found that replacing BN by a $$l_1$$, $$l_2$$, or $$l_{\infty}$$ lead to similar results.
 
 ## 2. Computing the mean and variance differently
-Algorithms similar to Batch Norm have been developed where the mean & variance are computed differently.
+Algorithms similar to Batch Norm have been developed where the mean & variance are computed differently.[Source](https://arxiv.org/abs/1803.08494)
 
 <img src="https://arthurdouillard.com/figures/normalization.png" width="1138" height="302" />
 
-[Source](https://arxiv.org/abs/1803.08494)
 
 ## 2.1. Layer Normalization
 [(Ba et al, 2016)](https://arxiv.org/abs/1607.06450)'s layer norm (LN) normalizes each image of a batch independently using all the channels. The goal is have constant performance with a large batch or a single image. It’s used in recurrent neural networks where the number of time steps can differ between tasks.
@@ -154,6 +157,7 @@ $$y = \phi(W \cdot x + b)$$
 In weight normalization, the weight vectors is expressed the following way:
 
 $$W = \frac{g}{\Vert V \Vert}V$$
+
 g and V being respectively a learnable scalar and a learnable matrix.
 
 ## 3.2. Cosine Normalization
