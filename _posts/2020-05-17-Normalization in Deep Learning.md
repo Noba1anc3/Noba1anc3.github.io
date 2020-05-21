@@ -96,28 +96,79 @@ Ioffe & Szegedy argued that the changing distribution of the pre-activation hurt
 Because of the random noise, the activation’s input is not normalized anymore and its distribution change at every time test.
 
 As you can see on the following figure, they found that the random shift of distribution didn’t produce extremely different results:
-![](https://arthurdouillard.com/figures/cmp_icf.png)
+
+<img src="https://arthurdouillard.com/figures/cmp_icf.png" width="1000" height="340" />
 
 *Fig. 2. Comparison between standard net, net with BN, and net with noisy BN.*
 
 On the other hand they found that the Batch Normalization improved the Lipschitzness of the loss function. In simpler term, the loss is smoother, and thus its gradient as well.
+
 ![](https://arthurdouillard.com/figures/smoothed_loss.png)
 
 *Fig. 3. Loss with and without Batch Normalization.*
 
 According to the authors:
 ```
-Improved Lipschitzness of the gradients gives us confidence that when we take a larger step in a direction of a computed gradient, this gradient direction remains a fairly accurate estimate of the actual gradient direction after taking that step. It thus enables any (gradient–based) training algorithm to take larger steps without the danger of running into a sudden change of the loss landscape such as flat region (corresponding to vanishing gradient) or sharp local minimum (causing exploding gradients).
+Improved Lipschitzness of the gradients gives us confidence that 
+when we take a larger step in a direction of a computed gradient, 
+this gradient direction remains a fairly accurate estimate of the 
+actual gradient direction after taking that step. It thus enables 
+any (gradient–based) training algorithm to take larger steps
+without the danger of running into a sudden change of the loss 
+landscape such as flat region (corresponding to vanishing gradient)
+or sharp local minimum (causing exploding gradients).
 ```
 
 The authors also found that replacing BN by a $$l_1$$, $$l_2$$, or $$l_{\infty}$$ lead to similar results.
 
 ## 2. Computing the mean and variance differently
 Algorithms similar to Batch Norm have been developed where the mean & variance are computed differently.
-![](https://arthurdouillard.com/figures/normalization.png)
 
-[](https://arxiv.org/abs/1803.08494)
+<img src="https://arthurdouillard.com/figures/normalization.png" width="1138" height="302" />
 
+[Source](https://arxiv.org/abs/1803.08494)
+
+## 2.1. Layer Normalization
+[(Ba et al, 2016)](https://arxiv.org/abs/1607.06450)'s layer norm (LN) normalizes each image of a batch independently using all the channels. The goal is have constant performance with a large batch or a single image. It’s used in recurrent neural networks where the number of time steps can differ between tasks.
+
+While all time steps share the same weights, each should have its own statistic. BN needs previously computed batch statistics, which would be impossible if there are more time steps at test time than training time. LN is time steps independent by simply computing the statistics on the incoming input.
+
+## 2.2. Instance Normalization
+[(Ulyanov et al, 2016)](https://arxiv.org/abs/1607.08022)’s instance norm (IN) normalizes each channel of each batch’s image independently. The goal is to normalize the constrast of the content image. According to the authors, only the style image contrast should matter.
+
+## 2.3. Group Normalization
+According to [(Wu and He, 2018)](https://arxiv.org/abs/1803.08494), convolution filters tend to group in related tasks (frequency, shapes, illumination, textures).
+
+They normalize each image in a batch independently so the model is batch size independent. Moreover they normalize the channels per group arbitrarily defined (usually 32 channels per group). All filters of a same group should specialize in the same task.
+
+## 3. Normalization on the network
+Previously shown methods normalized the inputs, there are methods were the normalization happen in the network rather than on the data.
+
+## 3.1. Weight Normalization
+[(Salimans and Kingma, 2016)](https://arxiv.org/abs/1602.07868) found that decoupling the length of the weight vectors from their direction accelerated the training.
+
+A fully connected layer does the following operation:
+
+$$y = \phi(W \cdot x + b)$$
+
+In weight normalization, the weight vectors is expressed the following way:
+
+$$W = \frac{g}{\Vert V \Vert}V$$
+g and V being respectively a learnable scalar and a learnable matrix.
+
+## 3.2. Cosine Normalization
+[(Luo et al, 2017)](https://arxiv.org/abs/1702.05870) normalizes both the weights and the input by replacing the classic dot product by a cosine similarity:
+
+$$y = \phi(\frac{W \cdot X}{\Vert W \Vert \Vert X \Vert})$$
+
+## 4. Conclusion
+Batch normalization (BN) is still the most represented method among new architectures despite its defect: the dependence on the batch size. Batch renormalization (BR) fixes this problem by adding two new parameters to approximate instance statistics instead of batch statistics.
+
+Layer norm (LN), instance norm (IN), and group norm (GN), are similar to BN. Their difference lie in the way statistics are computed.
+
+LN was conceived for RNNs, IN for style transfer, and GN for CNNs.
+
+Finally weigh norm and cosine norm normalize the network’s weight instead of simply the input data.
 
 ---
 Cited as:
@@ -130,16 +181,3 @@ Cited as:
   url     = "https://noba1anc3.github.io/2020/05/17/Normalization-in-Deep-Learning.html"
 }
 ```
-
-## Reference
-
-[1] Vincent Dumoulin and Francesco Visin. ["A guide to convolution arithmetic for deep learning."](https://arxiv.org/pdf/1603.07285.pdf) arXiv preprint arXiv:1603.07285 (2016).
-
-[2] Haohan Wang, Bhiksha Raj, and Eric P. Xing. ["On the Origin of Deep Learning."](https://arxiv.org/pdf/1702.07800.pdf) arXiv preprint arXiv:1702.07800 (2017).
-
-[3] Pedro F. Felzenszwalb, Ross B. Girshick, David McAllester, and Deva Ramanan. ["Object detection with discriminatively trained part-based models."](http://people.cs.uchicago.edu/~pff/papers/lsvm-pami.pdf) IEEE transactions on pattern analysis and machine intelligence 32, no. 9 (2010): 1627-1645.
-
-[4] Ross B. Girshick, Forrest Iandola, Trevor Darrell, and Jitendra Malik. ["Deformable part models are convolutional neural networks."](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Girshick_Deformable_Part_Models_2015_CVPR_paper.pdf
-) In Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), pp. 437-446. 2015.
-
-[5] Sermanet, Pierre, David Eigen, Xiang Zhang, Michaël Mathieu, Rob Fergus, and Yann LeCun. ["OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks"](https://pdfs.semanticscholar.org/f2c2/fbc35d0541571f54790851de9fcd1adde085.pdf) arXiv preprint arXiv:1312.6229 (2013).
