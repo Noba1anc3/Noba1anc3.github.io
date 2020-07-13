@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 <center><font face="verdana"  size=8>Curriculum Vitae</font></center>
 
 ## Basic Information
@@ -5,9 +9,6 @@
 <font face="verdana"  size=3>Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Music       Research Interest : CV & OCR</font>
 
 <font face="verdana"  size=3>              Mail : zxryhjp@yahoo.co.jp                   Github : https://noba1anc3.github.io</font>
----
-layout: post
----
 
 ## Educational Background
 
