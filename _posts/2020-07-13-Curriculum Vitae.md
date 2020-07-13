@@ -142,16 +142,16 @@ Core technologies: the design of delay slot, the processing of instruction pipel
 ## <center> Other Professional Practice </center>
 
 <center>2019.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Machine Learning <br>
-<a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3 </a><br>
+<a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3 </a><br></center>
 
-2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Undergraduate Graduation Project <br>
-Research of gait identification based on Generative Adversarial Networks <br>
+<center>2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Undergraduate Graduation Project <br>
+Research of gait identification based on Generative Adversarial Networks <br></center>
 
-2017.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curriculum Design of Principle of Database <br>
-Realization of online cinema booking system website on WAMP Server <br>
+<center>2017.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curriculum Design of Principle of Database <br>
+Realization of online cinema booking system website on WAMP Server <br></center>
 
-2016.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Object-Oriented Programming <br>
-Design of urban taxi dispatching system based on Java multi-threading </center><br>
+<center>2016.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Object-Oriented Programming <br>
+Design of urban taxi dispatching system based on Java multi-threading </center>
 
 ## <center> Exchange </center>
 
@@ -161,7 +161,7 @@ Conducted academic exchange activities</center>
 
 ## <center> Social Practice </center>
 
-<center>2018.06 2018 LPL Summer Split --- RNG Beijing Home Court <br>
+<center>2018.06 RNG Beijing Home Court --- 2018 LPL Summer Split <br>
 Served as the interior volunteer for the opening week of the RNG Beijing Home Court. <br>
 Mainly responsible for preparing the layout of arena and backstage, guide the audience, and keep order. </center><br>
 
