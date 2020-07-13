@@ -5,31 +5,30 @@ layout: post
 ## <center>Basic Information</center>
 
 <center>Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Music       Research Interest : CV & OCR</center>
-            <center>Mail : zxryhjp@yahoo.co.jp      Github : https://noba1anc3.github.io</center>
+<center>Mail : zxryhjp@yahoo.co.jp      Github : https://noba1anc3.github.io</center>
 
-## Educational Background
+## <center>Educational Background</center>
 
-<center>2019 - 2022   Beihang University   School of Computer Science and Engineering   
-Artificial Intelligence   Studying for M.Eng</center>
+<center>2019 - 2022   Beihang University   School of Computer Science and Engineering</center>
+<center>Artificial Intelligence   Studying for M.Eng</center>
+<br>
+<center>2014 - 2018   Beihang University   School of Computer Science and Engineering</center>
+<center>Computer Science and Technology   B.Eng (Bachelor in Engineer)</center>
 
-<center>2014 - 2018   Beihang University   School of Computer Science and Engineering   
-Computer Science and Technology   B.Eng (Bachelor in Engineer)
-</center>
+## <center>Language Skill</center>
 
-## Language Skill
-
-### English
+### <center>English</center>
 
 <center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn6TyffVgPNmGcjIvjOKMuxcAKJ1BZrBzbZJm2HeN8VaripjDuYYmI8vvcL1pckOBsQ!!/b&bo=VAROBlQETgYRCT4!&rf=viewer_4">CET-6</a> / CET-4 (2016 / 2015) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score : 386/ 490</center>
 
 <center><a href="http://www.github.com/noba1anc3/en_news">
 Have been intensive reading EN news for 500 days</a></center>
 
-### Japanese
+### <center>Japanese</center>
 
 <center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; about JLPT-N4</center>
 
-## Management
+## <center>Management</center>
 
 2019.09 ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
 SemSeg Group of SKLSDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leader / Person in Charge
@@ -40,7 +39,7 @@ SemSeg Group of SKLSDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
 2014.09 – 2016.08 &nbsp;&nbsp;&nbsp;&nbsp; <br> eSports Club of BUAA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; School Team Member / Operation and Maintenance
 
-## Award and Honor
+## <center>Award and Honor</center>
 
 2019.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The third, Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">"Zhihui Cup" 2019 National University Financial Technology Innovation Competition</a>
 
@@ -52,17 +51,43 @@ SemSeg Group of SKLSDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 
 2016.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Place <br>	Spring League of BUAA, Raytheon College E-Sports League
 
-## Internship
+## <center>Internship</center>
 
-<font face="verdana"  size=3>2019.09 ~ <br>SKLSDE, BUAA, Beijing, China <br>	Group Leader / Person In Charge <br>·	<a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>·	<a href="https://github.com/Noba1anc3/CH-NER">Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br> ·	<a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">Make a semantic segmentation dataset of articles of association based on PDFMiner</a>, <a href="https://github.com/Noba1anc3/Publaynet">and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br>·	<a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>·	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, and won the third and second prize of algorithm track. [2019]</a></font>
+2019.09 ~ <br>
+SKLSDE, BUAA, Beijing, China <br>
+	Group Leader / Person In Charge <br>
+·	<a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
+·	<a href="https://github.com/Noba1anc3/CH-NER">Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
+·	<a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">Make a semantic segmentation dataset of articles of association based on PDFMiner</a>, <a href="https://github.com/Noba1anc3/Publaynet">and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br>
+·	<a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
+·	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, and won the third and second prize of algorithm track. [2019]</a>
 
-<font face="verdana"  size=3>2019.05 - 2019.08 <br>VIDET, Shanghai, China <br>	Algorithm Engineer <br>·	<a href="https://github.com/Noba1anc3/ArcFace">Implementation of the real-time video stream face recognition system based on ArcFace</a><br>·	        Research on semantic segmentation based on rules, neural network and machine learning<br>	 ·	        Based on Rules: a set of general rules for Information Extraction out of forms is designed and implemented independently. The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>	·	        Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements, training cost, model generalization, finetune for downstream tasks and parameter tuning.  <br>	·	        Based on machine learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9.  </font>
+2019.05 - 2019.08 <br>
+VIDET, Shanghai, China <br>
+	Algorithm Engineer <br>
+·	<a href="https://github.com/Noba1anc3/ArcFace">Implementation of the real-time video stream face recognition system based on ArcFace</a><br>
+·	Research on semantic segmentation based on rules, neural network and machine learning<br>
+	·	Based on Rules: a set of general rules for Information Extraction out of forms is designed and implemented independently. The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>	
+	·	Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements, training cost, model generalization, finetune for downstream tasks and parameter tuning.  <br>
+	·	Based on machine learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9.
 
-<font face="verdana"  size=3>2018.03 - 2018.06 <br> Secondary School Affiliated to Tsinghua University, Beijing, China<br>	Head Lecture of the course ' the Introduction to AI ' <br>·	        Tuition Time: 48 Hours  <br>·	                Teaching Content: Python, classical machine learning and deep learning method    <br>·	 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn457z3U0oTs*AUAkgXCuuLsfjGQuzy6mTp8G2gtroLc6eSq3NqybzcRBC9K9RnjyNQ!!/b&bo=sgaAAigjIA0RCS4!&rf=viewer_4">               Teaching Result: Realization of Handwriting Recognition GUI Based on KNN in Python</a><br></font>
+2018.03 - 2018.06 <br> 
+Secondary School Affiliated to Tsinghua University, Beijing, China<br>	
+Head Lecture of the course ' the Introduction to AI ' <br>
+·	Tuition Time: 48 Hours  <br>
+·	Teaching Content: Python, classical machine learning and deep learning method    <br>
+·	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn457z3U0oTs*AUAkgXCuuLsfjGQuzy6mTp8G2gtroLc6eSq3NqybzcRBC9K9RnjyNQ!!/b&bo=sgaAAigjIA0RCS4!&rf=viewer_4">Teaching Result: Realization of Handwriting Recognition GUI Based on KNN in Python</a><br>
 
-<font face="verdana"  size=3>2017.11 - 2018.06 <br>         Laboratory of Intelligent Recognition and Image Processing, BUAA, Beijing, China<br>	Student <br>·	                Study on gait-recognition related papers, and accomplished the graduate thesis    <br></font>
+2017.11 - 2018.06 <br>
+Laboratory of Intelligent Recognition and Image Processing, BUAA, Beijing, China<br>
+	Student <br>
+·	Study on gait-recognition related papers, and accomplished the graduate thesis<br>
 
-<font face="verdana"  size=3>2017.03 - 2017.10 <br>                 the Institute of Advanced Computing Technology, BUAA, Beijing, China<br>	Student <br>·	                Cooperated with the Third Hospital of Peking University and developed the medical APP for COPD. Using Android studio, based on Java and its multithreading technology, realized the functions of filling in and uploading the disease scale, shooting and uploading medical records, interacting with doctors, recording the walking track, setting the medication alarm clock and so on. It has been officially put into use.    <br>·	        Laying the foundation for the use of deep learning to study COPD in the laboratory  </font>
+2017.03 - 2017.10 <br>
+the Institute of Advanced Computing Technology, BUAA, Beijing, China<br>
+	Student <br>
+·	Cooperated with the Third Hospital of Peking University and developed the medical APP for COPD. Using Android studio, based on Java and its multithreading technology, realized the functions of filling in and uploading the disease scale, shooting and uploading medical records, interacting with doctors, recording the walking track, setting the medication alarm clock and so on. It has been officially put into use.    <br>
+·	Laying the foundation for the use of deep learning to study COPD in the laboratory
 
 ## Core Professional Practice
 
