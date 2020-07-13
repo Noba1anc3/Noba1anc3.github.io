@@ -2,30 +2,31 @@
 layout: post
 ---
 
-## Basic Information
+<center>## Basic Information</center>
 
-Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Music       Research Interest : CV & OCR
+<center>Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Music       Research Interest : CV & OCR</center>
 
-            Mail : zxryhjp@yahoo.co.jp      Github : https://noba1anc3.github.io
+            <center>Mail : zxryhjp@yahoo.co.jp      Github : https://noba1anc3.github.io</center>
 
-## Educational Background
+<center>## Educational Background</center>
 
-2019 - 2022  Beihang University  School of Computer Science and Engineering  Artificial Intelligence　         Studying for M.Eng
+<center>2019 - 2022   Beihang University   School of Computer Science and Engineering   Artificial Intelligence   Studying for M.Eng</center>
 
-2014 - 2018  Beihang University  School of Computer Science and Engineering  Computer Science and Technology   B.Eng (Bachelor in Engineer)
+<center>2014 - 2018   Beihang University   School of Computer Science and Engineering   Computer Science and Technology   B.Eng (Bachelor in Engineer)
+</center>
 
-## Language Skill
+<center>## Language Skill</center>
 
-### English
+<center>### English</center>
 
 <center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn6TyffVgPNmGcjIvjOKMuxcAKJ1BZrBzbZJm2HeN8VaripjDuYYmI8vvcL1pckOBsQ!!/b&bo=VAROBlQETgYRCT4!&rf=viewer_4">CET-6</a> / CET-4 (2016 / 2015) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score : 386/ 490</center>
 
 <center><a href="http://www.github.com/noba1anc3/en_news">
 Have been intensive reading EN news for 500 days</a></center>
 
-### Japanese
+<center>### Japanese</center>
 
-<center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; about JLPT-N4<center>
+<center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; about JLPT-N4</center>
 
 ## Management
 
