@@ -2,54 +2,55 @@
 layout: post
 ---
 
-<center>## Basic Information</center>
+## <center>Basic Information</center>
 
 <center>Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Music       Research Interest : CV & OCR</center>
-
             <center>Mail : zxryhjp@yahoo.co.jp      Github : https://noba1anc3.github.io</center>
 
-<center>## Educational Background</center>
+## Educational Background
 
-<center>2019 - 2022   Beihang University   School of Computer Science and Engineering   Artificial Intelligence   Studying for M.Eng</center>
+<center>2019 - 2022   Beihang University   School of Computer Science and Engineering   
+Artificial Intelligence   Studying for M.Eng</center>
 
-<center>2014 - 2018   Beihang University   School of Computer Science and Engineering   Computer Science and Technology   B.Eng (Bachelor in Engineer)
+<center>2014 - 2018   Beihang University   School of Computer Science and Engineering   
+Computer Science and Technology   B.Eng (Bachelor in Engineer)
 </center>
 
-<center>## Language Skill</center>
+## Language Skill
 
-<center>### English</center>
+### English
 
 <center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn6TyffVgPNmGcjIvjOKMuxcAKJ1BZrBzbZJm2HeN8VaripjDuYYmI8vvcL1pckOBsQ!!/b&bo=VAROBlQETgYRCT4!&rf=viewer_4">CET-6</a> / CET-4 (2016 / 2015) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score : 386/ 490</center>
 
 <center><a href="http://www.github.com/noba1anc3/en_news">
 Have been intensive reading EN news for 500 days</a></center>
 
-<center>### Japanese</center>
+### Japanese
 
 <center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; about JLPT-N4</center>
 
 ## Management
 
-<font face="verdana"  size=3>2019.09 ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
-SemSeg Group of SKLSDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leader / Person in Charge</font>
+2019.09 ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+SemSeg Group of SKLSDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leader / Person in Charge
 
-<font face="verdana"  size=3>2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> Class No.140613 of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Class Committee / Minister of Organization</font>
+2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> Class No.140613 of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Class Committee / Minister of Organization
 
-<font face="verdana"  size=3>2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> ACG Club of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Live Event Consultant</font>
+2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> ACG Club of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Live Event Consultant
 
-<font face="verdana"  size=3>2014.09 – 2016.08 &nbsp;&nbsp;&nbsp;&nbsp; <br> eSports Club of BUAA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; School Team Member / Operation and Maintenance</font>
+2014.09 – 2016.08 &nbsp;&nbsp;&nbsp;&nbsp; <br> eSports Club of BUAA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; School Team Member / Operation and Maintenance
 
 ## Award and Honor
 
-<font face="verdana"  size=3>2019.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The third, Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">"Zhihui Cup" 2019 National University Financial Technology Innovation Competition</a></font>
+2019.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The third, Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">"Zhihui Cup" 2019 National University Financial Technology Innovation Competition</a>
 
-<font face="verdana"  size=3>2018.06 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn0UBm6Jr6mYr41cemrSkByfnoZcEUrB2.JZSuXZOjpIzNLNN3tMV1Ec4flJcMD0RzA!!/b&bo=QAYnCAYN*RADCaM!&rf=viewer_4">Excellent Graduation Thesis of Grade 2014, BUAA</a></font>
+2018.06 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn0UBm6Jr6mYr41cemrSkByfnoZcEUrB2.JZSuXZOjpIzNLNN3tMV1Ec4flJcMD0RzA!!/b&bo=QAYnCAYN*RADCaM!&rf=viewer_4">Excellent Graduation Thesis of Grade 2014, BUAA</a>
 
-<font face="verdana"  size=3>2018.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn845wJkoLXf*8GIlqmg.rx6CyjvYPYPKxSZOttN3wbat67Qo.E8E*rcVxWZcXaculA!!/b&bo=LgRVAi4EVQIDCSw!&rf=viewer_4">Information & Technology Group, the 28th "Feng-Ru Cup" Science & Technology Competition</a></font>
+2018.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn845wJkoLXf*8GIlqmg.rx6CyjvYPYPKxSZOttN3wbat67Qo.E8E*rcVxWZcXaculA!!/b&bo=LgRVAi4EVQIDCSw!&rf=viewer_4">Information & Technology Group, the 28th "Feng-Ru Cup" Science & Technology Competition</a>
 
-<font face="verdana"  size=3>2016.08 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/U9VSE8DftkGCrX.UXUSpm2UFWfYyLsEg6F8iU8zxL1WTGl2RrFOJ2ib5l8cb.RpjObT.coav8NyaPXtZ.1fBVuhAYEJ9gc33brtWO*stSCg!/b&bo=VQhABgASgA0ROYo!&rf=viewer_4">Java Senior Engineer Certificate, Issued by China Informatization Training Center</a></font>
+2016.08 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/U9VSE8DftkGCrX.UXUSpm2UFWfYyLsEg6F8iU8zxL1WTGl2RrFOJ2ib5l8cb.RpjObT.coav8NyaPXtZ.1fBVuhAYEJ9gc33brtWO*stSCg!/b&bo=VQhABgASgA0ROYo!&rf=viewer_4">Java Senior Engineer Certificate, Issued by China Informatization Training Center</a>
 
-<font face="verdana"  size=3>2016.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Place <br>	Spring League of BUAA, Raytheon College E-Sports League</font>
+2016.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Place <br>	Spring League of BUAA, Raytheon College E-Sports League
 
 ## Internship
 
