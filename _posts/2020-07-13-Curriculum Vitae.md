@@ -13,8 +13,7 @@ layout: post
 <center>Beijing University of Aeronautics and Astronautics</center>
 <center>School of Computer Science and Engineering</center>
 <center>Artificial Intelligence</center>
-<center>Studying for M.Eng</center>
-
+<center>Studying for M.Eng</center><br>
 <center>2014 - 2018</center>
 <center>Beijing University of Aeronautics and Astronautics</center>
 <center>School of Computer Science and Engineering</center>
@@ -78,7 +77,7 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 <center><a href="https://github.com/Noba1anc3/CH-NER">②　Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br></center>
 <center><a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">③　Make a semantic segmentation dataset of articles of association based on PDFMiner</a>, <a href="https://github.com/Noba1anc3/Publaynet">and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br></center>
 <center><a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">④　Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br></center>
-<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">⑤　Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, and won the third and second prize of algorithm track. [2019]</a></center>
+<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">⑤　Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, and won the third and second prize of algorithm track. [2019]</a></center><br>
 
 <center>2019.05 - 2019.08 <br></center>
 <center>VIDET, Shanghai, China <br></center>
@@ -87,18 +86,18 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 <center>②　Research on semantic segmentation based on rules, neural network and machine learning<br></center>
 <center>Based on Rules: a set of general rules for Information Extraction out of forms is designed and implemented independently. The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>	</center>
 <center>Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements, training cost, model generalization, finetune for downstream tasks and parameter tuning. <br></center>
-<center>Based on machine learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9.</center>
+<center>Based on machine learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9.</center><br>
 
 <center>2018.03 - 2018.06 <br></center>
 <center>Secondary School Affiliated to Tsinghua University, Beijing, China<br></center>
 <center>Head Lecture of the course < the Introduction to AI > <br></center>
 <center>Tuition Time : 48 Hours  <br></center>
 <center>Teaching Content : Python, classical machine learning and deep learning method    <br></center>
-<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn457z3U0oTs*AUAkgXCuuLsfjGQuzy6mTp8G2gtroLc6eSq3NqybzcRBC9K9RnjyNQ!!/b&bo=sgaAAigjIA0RCS4!&rf=viewer_4">Teaching Result : Realization of Handwriting Recognition GUI Based on KNN in Python</a><br></center>
+<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn457z3U0oTs*AUAkgXCuuLsfjGQuzy6mTp8G2gtroLc6eSq3NqybzcRBC9K9RnjyNQ!!/b&bo=sgaAAigjIA0RCS4!&rf=viewer_4">Teaching Result : Realization of Handwriting Recognition GUI Based on KNN in Python</a><br></center><br>
 
 <center>2017.11 - 2018.06 <br></center>
 <center>Laboratory of Intelligent Recognition and Image Processing, BUAA, Beijing, China<br></center>
-<center>Study on gait-recognition related papers, and accomplished the graduate thesis<br></center>
+<center>Study on gait-recognition related papers, and accomplished the graduate thesis<br></center><br>
 
 <center>2017.03 - 2017.10 <br></center>
 <center>the Institute of Advanced Computing Technology, BUAA, Beijing, China<br></center>
@@ -109,13 +108,16 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 
 <center>2019.11 Design and reproduction of the network engineering project of No.2 Laboratory Building of Beihang Shahe Campus <br>
 Use H3C routing switching equipment of computer network laboratory to conduct network experiment <br>
-Application of network design planning, address assignment, VLAN, NAT-PT address translation, routing protocol, PIM-IGMP Multicast Protocol, SNMP Network Management, ACL Access Control and IPv6 technology <br>
+Application of network design planning, address assignment, VLAN, NAT-PT address translation, routing protocol, 
+PIM-IGMP Multicast Protocol, SNMP Network Management, ACL Access Control and IPv6 technology <br>
 Ensure the reliability of the network through device and routing backup, partially realize the design of the network </center>
+
 
 <center>2017.01 Implementation of the extended C0 grammar programming language’s compiler and interpreter <br>
 Subject Source: Curriculum Design of Fundamentals of Compiling <br>
 Designed and implemented on C++ and Visual Studio <br>
 The compiler has been subjected to stress testing: functional implementation, stack depth, complex calls, et al. </center>
+
 
 <center>2016.01 Design and implementation of the Microprocessor without Interlocked Piped Stages <br>
 Subject Source: Curriculum Design of Principles of Computer Organization <br>
@@ -125,16 +127,16 @@ Core technologies: the design of delay slot, the processing of instruction pipel
 ## <center> Other Professional Practice </center>
 
 <center>2019.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Machine Learning <br>
-<a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3 </a>
+<a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3 </a><br>
 
 2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Undergraduate Graduation Project <br>
-Research of gait identification based on Generative Adversarial Networks
+Research of gait identification based on Generative Adversarial Networks <br>
 
 2017.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curriculum Design of Principle of Database <br>
-Realization of online cinema booking system website on WAMP Server
+Realization of online cinema booking system website on WAMP Server <br>
 
 2016.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Object-Oriented Programming <br>
-Design of urban taxi dispatching system based on Java multi-threading </center>
+Design of urban taxi dispatching system based on Java multi-threading </center><br>
 
 ## <center> Exchange </center>
 
