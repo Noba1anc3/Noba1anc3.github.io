@@ -77,7 +77,7 @@ Group Leader / Person In Charge <br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
 ①　Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04] </a><br>
 <a href="https://github.com/Noba1anc3/CH-NER">
-②　Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04] </a></center>
+②　Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04] </a>
 <a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">
 ③　Make a semantic segmentation dataset of articles of association based on PDFMiner </a>,<br> 
 <a href="https://github.com/Noba1anc3/Publaynet">
