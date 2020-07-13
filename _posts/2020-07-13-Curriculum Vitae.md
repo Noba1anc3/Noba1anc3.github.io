@@ -77,7 +77,7 @@ Group Leader / Person In Charge <br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
 ①　Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04] </a><br>
 <a href="https://github.com/Noba1anc3/CH-NER">
-②　Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04] </a>
+②　Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04] </a><br>
 <a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">
 ③　Make a semantic segmentation dataset of articles of association based on PDFMiner </a>,<br> 
 <a href="https://github.com/Noba1anc3/Publaynet">
@@ -86,7 +86,7 @@ and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [
 ④　Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03] </a><br>
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">
 ⑤　Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, <br>
- and won the third and second prize of algorithm track. [2019] </a></center>
+ and won the third and second prize of algorithm track. [2019] </a></center><br>
 
 <center>2019.05 - 2019.08 <br>
 VIDET, Shanghai, China <br>
@@ -98,7 +98,7 @@ Based on Rules: a set of general rules for Information Extraction out of forms i
 The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>
 Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements, <br>
 training cost, model generalization, finetune for downstream tasks and parameter tuning. <br>
-Based on machine learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9. </center><br>
+Based on Machine Learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9. </center><br>
 
 <center>2018.03 - 2018.06 <br>
 Secondary School Affiliated to Tsinghua University, Beijing, China<br>
@@ -119,7 +119,7 @@ Using Android studio, based on Java and its multithreading technology, <br>
 realized the functions of filling in and uploading the disease scale, shooting and uploading medical records, <br>
 interacting with doctors, recording the walking track, setting the medication alarm clock and so on. <br>
 It has been officially put into use. <br>
-Laying the foundation for the use of deep learning to study COPD in the laboratory </center>
+Laying the foundation for the use of deep learning to study COPD in the laboratory. </center>
 
 ## <center> Core Professional Practice </center>
 
@@ -127,14 +127,12 @@ Laying the foundation for the use of deep learning to study COPD in the laborato
 Use H3C routing switching equipment of computer network laboratory to conduct network experiment <br>
 Application of network design planning, address assignment, VLAN, NAT-PT address translation, routing protocol, <br>
 PIM-IGMP Multicast Protocol, SNMP Network Management, ACL Access Control and IPv6 technology <br>
-Ensure the reliability of the network through device and routing backup, partially realize the design of the network </center>
-
+Ensure the reliability of the network through device and routing backup, partially realize the design of the network </center><br>
 
 <center>2017.01 Implementation of the extended C0 grammar programming language’s compiler and interpreter <br>
 Subject Source: Curriculum Design of Fundamentals of Compiling <br>
 Designed and implemented on C++ and Visual Studio <br>
-The compiler has been subjected to stress testing: functional implementation, stack depth, complex calls, et al. </center>
-
+The compiler has been subjected to stress testing: functional implementation, stack depth, complex calls, et al. </center><br>
 
 <center>2016.01 Design and implementation of the Microprocessor without Interlocked Piped Stages <br>
 Subject Source: Curriculum Design of Principles of Computer Organization <br>
@@ -164,9 +162,9 @@ Conducted academic exchange activities</center>
 ## <center> Social Practice </center>
 
 <center>2018.06 2018 LPL Summer Split --- RNG Beijing Home Court <br>
-Served as the interior volunteer for the opening week of the RNG Beijing Home Court.<br>
-Mainly responsible for preparing the layout of arena and backstage, guide the audience, and keep order.</center>
+Served as the interior volunteer for the opening week of the RNG Beijing Home Court. <br>
+Mainly responsible for preparing the layout of arena and backstage, guide the audience, and keep order. </center><br>
 
 <center>2016.05 8th China Cloud Computing Conference <br>
-<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn*zgMvy1JdwreAOHASXGwARpiDpA7ty3mRM.7*RctmUrFvplblQPiwKziyU*EUmkiA!!/b&bo=VQhABgASgA0RCbo!&rf=viewer_4">Served as the volunteer of the 2016 8th CCCC and got the certificate</a></center>
+<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn*zgMvy1JdwreAOHASXGwARpiDpA7ty3mRM.7*RctmUrFvplblQPiwKziyU*EUmkiA!!/b&bo=VQhABgASgA0RCbo!&rf=viewer_4">Served as the volunteer of the 2016 8th CCCC and got the certificate </a></center>
 
