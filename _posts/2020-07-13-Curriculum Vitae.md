@@ -63,7 +63,7 @@ Excellent Graduation Thesis of Grade 2014, BUAA</a></center>
 Information & Technology Group, the 28th "Feng-Ru Cup" Science & Technology Competition</a></center>
 
 <center>2016.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java Senior Engineer <br>
-<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/U9VSE8DftkGCrX.UXUSpm2UFWfYyLsEg6F8iU8zxL1WTGl2RrFOJ2ib5l8cb.RpjObT.coav8NyaPXtZ.1fBVuhAYEJ9gc33brtWO*stSCg!/b&bo=VQhABgASgA0ROYo!&rf=viewer_4">
+<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn3g9S5qc*oXkNhVBvm1Nq.6xhTqNgPHktWroajJv.g7RYgYvxUwaHplX7VzrLL52IA!!/b&bo=VQhABnAIVAYRCQ8!&rf=viewer_4">
 Java Senior Engineer Certificate, Issued by China Informatization Training Center</a></center>
 
 <center>2016.04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Place <br>
