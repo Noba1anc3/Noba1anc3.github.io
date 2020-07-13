@@ -9,11 +9,17 @@ layout: post
 
 ## <center>Educational Background</center>
 
-<center>2019 - 2022   Beihang University   School of Computer Science and Engineering</center>
-<center>Artificial Intelligence   Studying for M.Eng</center>
-<br>
-<center>2014 - 2018   Beihang University   School of Computer Science and Engineering</center>
-<center>Computer Science and Technology   B.Eng (Bachelor in Engineer)</center>
+<center>2019 - 2022</center>
+<center>Beijing University of Aeronautics and Astronautics</center>
+<center>School of Computer Science and Engineering</center>
+<center>Artificial Intelligence</center>
+<center>Studying for M.Eng</center>
+
+<center>2014 - 2018</center>
+<center>Beijing University of Aeronautics and Astronautics</center>
+<center>School of Computer Science and Engineering</center>
+<center>Computer Science and Technology</center>
+<center>B.Eng (Bachelor in Engineer)</center>
 
 ## <center>Language Skill</center>
 
@@ -30,53 +36,53 @@ Have been intensive reading EN news for 500 days</a></center>
 
 ## <center>Management</center>
 
-2019.09 ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
-SemSeg Group of SKLSDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leader / Person in Charge
+<center>2019.09 ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+SemSeg Group of SKLSDE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leader / Person in Charge</center>
 
-2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> Class No.140613 of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Class Committee / Minister of Organization
+<center>2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> Class No.140613 of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Class Committee / Minister of Organization</center>
 
-2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> ACG Club of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Live Event Consultant
+<center>2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp; <br> ACG Club of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Live Event Consultant</center>
 
-2014.09 – 2016.08 &nbsp;&nbsp;&nbsp;&nbsp; <br> eSports Club of BUAA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; School Team Member / Operation and Maintenance
+<center>2014.09 – 2016.08 &nbsp;&nbsp;&nbsp;&nbsp; <br> eSports Club of BUAA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; School Team Member / Operation and Maintenance</center>
 
 ## <center>Award and Honor</center>
 
-2019.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The third, Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">"Zhihui Cup" 2019 National University Financial Technology Innovation Competition</a>
+<center>2019.11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The third, Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">"Zhihui Cup" 2019 National University Financial Technology Innovation Competition</a></center>
 
-2018.06 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn0UBm6Jr6mYr41cemrSkByfnoZcEUrB2.JZSuXZOjpIzNLNN3tMV1Ec4flJcMD0RzA!!/b&bo=QAYnCAYN*RADCaM!&rf=viewer_4">Excellent Graduation Thesis of Grade 2014, BUAA</a>
+<center>2018.06 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn0UBm6Jr6mYr41cemrSkByfnoZcEUrB2.JZSuXZOjpIzNLNN3tMV1Ec4flJcMD0RzA!!/b&bo=QAYnCAYN*RADCaM!&rf=viewer_4">Excellent Graduation Thesis of Grade 2014, BUAA</a></center>
 
-2018.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn845wJkoLXf*8GIlqmg.rx6CyjvYPYPKxSZOttN3wbat67Qo.E8E*rcVxWZcXaculA!!/b&bo=LgRVAi4EVQIDCSw!&rf=viewer_4">Information & Technology Group, the 28th "Feng-Ru Cup" Science & Technology Competition</a>
+<center>2018.05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Prize <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn845wJkoLXf*8GIlqmg.rx6CyjvYPYPKxSZOttN3wbat67Qo.E8E*rcVxWZcXaculA!!/b&bo=LgRVAi4EVQIDCSw!&rf=viewer_4">Information & Technology Group, the 28th "Feng-Ru Cup" Science & Technology Competition</a></center>
 
-2016.08 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/U9VSE8DftkGCrX.UXUSpm2UFWfYyLsEg6F8iU8zxL1WTGl2RrFOJ2ib5l8cb.RpjObT.coav8NyaPXtZ.1fBVuhAYEJ9gc33brtWO*stSCg!/b&bo=VQhABgASgA0ROYo!&rf=viewer_4">Java Senior Engineer Certificate, Issued by China Informatization Training Center</a>
+<center>2016.08 <br>	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/U9VSE8DftkGCrX.UXUSpm2UFWfYyLsEg6F8iU8zxL1WTGl2RrFOJ2ib5l8cb.RpjObT.coav8NyaPXtZ.1fBVuhAYEJ9gc33brtWO*stSCg!/b&bo=VQhABgASgA0ROYo!&rf=viewer_4">Java Senior Engineer Certificate, Issued by China Informatization Training Center</a></center>
 
-2016.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Place <br>	Spring League of BUAA, Raytheon College E-Sports League
+<center>2016.04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second Place <br>	Spring League of BUAA, Raytheon College E-Sports League</center>
 
 ## <center>Internship</center>
 
-2019.09 ~ <br>
-SKLSDE, BUAA, Beijing, China <br>
-	Group Leader / Person In Charge <br>
-·	<a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
-·	<a href="https://github.com/Noba1anc3/CH-NER">Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
-·	<a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">Make a semantic segmentation dataset of articles of association based on PDFMiner</a>, <a href="https://github.com/Noba1anc3/Publaynet">and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br>
-·	<a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
-·	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, and won the third and second prize of algorithm track. [2019]</a>
+<center>2019.09 ~ <br></center>
+<center>SKLSDE, BUAA, Beijing, China <br></center>
+<center>Group Leader / Person In Charge <br></center>
+<center><a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br></center>
+<center><a href="https://github.com/Noba1anc3/CH-NER">Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br></center>
+<center><a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">Make a semantic segmentation dataset of articles of association based on PDFMiner</a>, <a href="https://github.com/Noba1anc3/Publaynet">and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br></center>
+<center><a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br></center>
+<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, and won the third and second prize of algorithm track. [2019]</a></center>
 
-2019.05 - 2019.08 <br>
-VIDET, Shanghai, China <br>
-	Algorithm Engineer <br>
-·	<a href="https://github.com/Noba1anc3/ArcFace">Implementation of the real-time video stream face recognition system based on ArcFace</a><br>
-·	Research on semantic segmentation based on rules, neural network and machine learning<br>
-	·	Based on Rules: a set of general rules for Information Extraction out of forms is designed and implemented independently. The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>	
-	·	Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements, training cost, model generalization, finetune for downstream tasks and parameter tuning.  <br>
-	·	Based on machine learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9.
+<center>2019.05 - 2019.08 <br></center>
+<center>VIDET, Shanghai, China <br></center>
+<center>Algorithm Engineer <br></center>
+<center><a href="https://github.com/Noba1anc3/ArcFace">Implementation of the real-time video stream face recognition system based on ArcFace</a><br></center>
+<center>Research on semantic segmentation based on rules, neural network and machine learning<br></center>
+<center>Based on Rules: a set of general rules for Information Extraction out of forms is designed and implemented independently. The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>	</center>
+<center>Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements, training cost, model generalization, finetune for downstream tasks and parameter tuning. <br></center>
+<center>Based on machine learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9.</center>
 
-2018.03 - 2018.06 <br> 
-Secondary School Affiliated to Tsinghua University, Beijing, China<br>	
-Head Lecture of the course ' the Introduction to AI ' <br>
-·	Tuition Time: 48 Hours  <br>
-·	Teaching Content: Python, classical machine learning and deep learning method    <br>
-·	<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn457z3U0oTs*AUAkgXCuuLsfjGQuzy6mTp8G2gtroLc6eSq3NqybzcRBC9K9RnjyNQ!!/b&bo=sgaAAigjIA0RCS4!&rf=viewer_4">Teaching Result: Realization of Handwriting Recognition GUI Based on KNN in Python</a><br>
+<center>2018.03 - 2018.06 <br></center>
+<center>Secondary School Affiliated to Tsinghua University, Beijing, China<br></center>
+<center>Head Lecture of the course ' the Introduction to AI ' <br></center>
+<center>Tuition Time: 48 Hours  <br></center>
+<center>Teaching Content: Python, classical machine learning and deep learning method    <br></center>
+<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn457z3U0oTs*AUAkgXCuuLsfjGQuzy6mTp8G2gtroLc6eSq3NqybzcRBC9K9RnjyNQ!!/b&bo=sgaAAigjIA0RCS4!&rf=viewer_4">Teaching Result: Realization of Handwriting Recognition GUI Based on KNN in Python</a><br></center>
 
 2017.11 - 2018.06 <br>
 Laboratory of Intelligent Recognition and Image Processing, BUAA, Beijing, China<br>
