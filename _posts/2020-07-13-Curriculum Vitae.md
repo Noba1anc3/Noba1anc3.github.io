@@ -75,17 +75,17 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 SKLSDE, BUAA, Beijing, China <br>
 Person In Charge <br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
-①　Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04] </a><br>
+①　Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/">
-②　Implementation of  [2020.04] </a><br>
+②　Implementation of  [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">
-③　Make a semantic segmentation dataset of articles of association based on PDFMiner </a>,<br> 
+③　Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
 <a href="https://github.com/Noba1anc3/Publaynet">
-and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04] </a><br>
+and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">
-④　Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03] </a><br>
+④　Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">
-⑤　Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field, <br>
+⑤　Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
  and won the third and second prize of algorithm track. [2019] </a></center><br>
 
 <center>2019.05 - 2019.08 <br>
@@ -102,7 +102,7 @@ Based on Machine Learning: the experiment of LightGBM Feature Engineering makes 
 
 <center>2018.03 - 2018.06 <br>
 Secondary School Affiliated to Tsinghua University, Beijing, China<br>
-Head Lecture of the course < the Introduction to AI > <br>
+Head Lecturer of the course < the Introduction to AI > <br>
 Tuition Time : 48 Hours  <br>
 Teaching Content : Python, classical machine learning and deep learning method <br>
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn457z3U0oTs*AUAkgXCuuLsfjGQuzy6mTp8G2gtroLc6eSq3NqybzcRBC9K9RnjyNQ!!/b&bo=sgaAAigjIA0RCS4!&rf=viewer_4">
@@ -123,26 +123,26 @@ Laying the foundation for the use of deep learning to study COPD in the laborato
 
 ## <center> Core Professional Practice </center>
 
-<center>2019.11 Design and reproduction of the network engineering project of No.2 Laboratory Building of Beihang Shahe Campus <br>
+<center>2019.11 &nbsp;&nbsp;&nbsp;&nbsp; Design and reproduction of the network engineering project of No.2 Laboratory Building of Beihang Shahe Campus <br>
 Use H3C routing switching equipment of computer network laboratory to conduct network experiment <br>
 Application of network design planning, address assignment, VLAN, NAT-PT address translation, routing protocol, <br>
 PIM-IGMP Multicast Protocol, SNMP Network Management, ACL Access Control and IPv6 technology <br>
 Ensure the reliability of the network through device and routing backup, partially realize the design of the network </center><br>
 
-<center>2017.01 Implementation of the extended C0 grammar programming language’s compiler and interpreter <br>
-Subject Source: Curriculum Design of Fundamentals of Compiling <br>
+<center>2017.01 &nbsp;&nbsp;&nbsp;&nbsp; Implementation of the extended C0 grammar programming language’s compiler and interpreter <br>
+Subject Source : Curriculum Design of Fundamentals of Compiling <br>
 Designed and implemented on C++ and Visual Studio <br>
 The compiler has been subjected to stress testing: functional implementation, stack depth, complex calls, et al. </center><br>
 
-<center>2016.01 Design and implementation of the Microprocessor without Interlocked Piped Stages <br>
-Subject Source: Curriculum Design of Principles of Computer Organization <br>
+<center>2016.01 &nbsp;&nbsp;&nbsp;&nbsp; Design and implementation of the Microprocessor without Interlocked Piped Stages <br>
+Subject Source : Curriculum Design of Principles of Computer Organization <br>
 Architecture designed in Logisim, implemented in Xilinx ISE with Verilog HDL <br>
 Core technologies: the design of delay slot, the processing of instruction pipeline </center>
 
 ## <center> Other Professional Practice </center>
 
 <center>2019.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Machine Learning <br>
-<a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3 </a><br></center>
+<a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3</a><br></center>
 
 <center>2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Undergraduate Graduation Project <br>
 Research of gait identification based on Generative Adversarial Networks <br></center>
