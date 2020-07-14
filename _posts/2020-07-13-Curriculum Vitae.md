@@ -73,7 +73,7 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 
 <center>2019.09 ~ <br>
 SKLSDE, BUAA, Beijing, China <br>
-Person In Charge <br>
+Leader & Person In Charge <br>
 <a href="https://github.com/Noba1anc3/trash_classify_competition">
 ①  Participate in 2020 Huawei Cloud Cup Shenzhen Open Data Appliance Innovation Competition [2020.06]</a><br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
