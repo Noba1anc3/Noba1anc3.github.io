@@ -37,7 +37,7 @@ Have been intensive reading EN news for 500 days</a></center>
 ## <center>Management</center>
 
 <center> 2019.09 ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-SemSeg Group of SKLSDE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Person in Charge</center>
+SemSeg Group of SKLSDE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leader / Person in Charge</center>
 
 <center> 2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 Class No.140613 of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class Committee / Minister of Organization</center>
@@ -76,8 +76,8 @@ SKLSDE, BUAA, Beijing, China <br>
 Person In Charge <br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
 ①　Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
-<a href="https://github.com/Noba1anc3/">
-②　Implementation of  [2020.04]</a><br>
+<a href="https://github.com/Noba1anc3/CH-NER">
+②　Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">
 ③　Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
 <a href="https://github.com/Noba1anc3/Publaynet">
