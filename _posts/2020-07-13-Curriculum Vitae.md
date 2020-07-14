@@ -158,7 +158,7 @@ Design of urban taxi dispatching system based on Java multi-threading </center>
 
 ## <center> Exchange </center>
 
-<center>2017.08 the University of Tokyo<br> 
+<center>2017.08 the University of Tokyo, Tokyo, Japan<br> 
 Visited Department of Computer Science, Graduate School of Information Science and Technology, the University of Tokyo<br>
 Conducted academic exchange activities</center>
 
