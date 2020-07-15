@@ -77,17 +77,17 @@ Leader & Person In Charge <br>
 <a href="https://github.com/Noba1anc3/trash_classify_competition">
 ①  Participate in 2020 Huawei Cloud Cup Shenzhen Open Data Appliance Innovation Competition [2020.06]</a><br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
-②　Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
+②  Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/CH-NER">
-③　Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
+③  Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">
-④　Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
+④  Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
 <a href="https://github.com/Noba1anc3/Publaynet">
 and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">
-⑤　Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
+⑤  Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">
-⑥　Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
+⑥  Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
  and won the third and second prize of algorithm track. [2019] </a></center><br>
 
 <center>2019.05 - 2019.08 <br>
@@ -158,8 +158,8 @@ Design of urban taxi dispatching system based on Java multi-threading </center>
 
 ## <center> Exchange </center>
 
-<center>2017.08 the University of Tokyo, Tokyo, Japan<br> 
-Visited Department of Computer Science, Graduate School of Information Science and Technology, the University of Tokyo<br>
+<center>2017.08 the University of Tokyo, Tokyo, Japan<br> 
+<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn77BdHzgQDvG4wJ*BNz3.0AVveG5vutaOZvVcRYnlDC6RV5PFHy8bJJvJ4Y7o.6tCg!!/b&bo=0AIABdACAAURCT4!&rf=viewer_4">Visited Department of Computer Science, Graduate School of Information Science and Technology, the University of Tokyo</a><br>
 Conducted academic exchange activities</center>
 
 ## <center> Social Practice </center>
