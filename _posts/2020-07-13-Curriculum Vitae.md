@@ -158,16 +158,16 @@ Design of urban taxi dispatching system based on Java multi-threading </center>
 
 ## <center> Exchange </center>
 
-<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn77BdHzgQDvG4wJ*BNz3.0AVveG5vutaOZvVcRYnlDC6RV5PFHy8bJJvJ4Y7o.6tCg!!/b&bo=0AIABdACAAURCT4!&rf=viewer_4">2017.08 the University of Tokyo, Tokyo, Japan</a><br> 
+<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn77BdHzgQDvG4wJ*BNz3.0AVveG5vutaOZvVcRYnlDC6RV5PFHy8bJJvJ4Y7o.6tCg!!/b&bo=0AIABdACAAURCT4!&rf=viewer_4">2017.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the University of Tokyo, Tokyo, Japan</a><br> 
 Visited Department of Computer Science, Graduate School of Information Science and Technology, the University of Tokyo<br>
 Conducted academic exchange activities</center>
 
 ## <center> Social Practice </center>
 
-<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn23gQmzbVdoxbv*exsH6rmg4p7MZXaoX7AkuQindec*IS2M0BZVDtgMqFvcN911WUA!!/b&bo=qAZABvwIcAgRCVo!&rf=viewer_4">2018.06 RNG Beijing Home Court --- 2018 LPL Summer Split</a><br>
+<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn23gQmzbVdoxbv*exsH6rmg4p7MZXaoX7AkuQindec*IS2M0BZVDtgMqFvcN911WUA!!/b&bo=qAZABvwIcAgRCVo!&rf=viewer_4">2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RNG Beijing Home Court --- 2018 LPL Summer Split</a><br>
 Served as the interior volunteer for the opening week of the RNG Beijing Home Court. <br>
 Mainly responsible for preparing the layout of arena and backstage, guide the audience, and keep order. </center><br>
 
-<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn*zgMvy1JdwreAOHASXGwARpiDpA7ty3mRM.7*RctmUrFvplblQPiwKziyU*EUmkiA!!/b&bo=VQhABgASgA0RCbo!&rf=viewer_4">2016.05 8th China Cloud Computing Conference</a><br>
+<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn*zgMvy1JdwreAOHASXGwARpiDpA7ty3mRM.7*RctmUrFvplblQPiwKziyU*EUmkiA!!/b&bo=VQhABgASgA0RCbo!&rf=viewer_4">2016.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8th China Cloud Computing Conference</a><br>
 Served as the volunteer of the 2016 8th CCCC and got the certificate </center>
 
