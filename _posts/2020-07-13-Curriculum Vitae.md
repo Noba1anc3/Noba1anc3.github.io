@@ -126,34 +126,34 @@ Laying the foundation for the use of deep learning to study COPD in the laborato
 
 ## <center> Core Professional Practice </center>
 
-<center>2019.11 &nbsp;&nbsp;&nbsp;&nbsp; Design and reproduction of the network engineering project of No.2 Laboratory Building of Beihang Shahe Campus <br>
+<center>Design and reproduction of the network engineering project of No.2 Laboratory Building of Beihang Shahe Campus <br>
 Use H3C routing switching equipment of computer network laboratory to conduct network experiment <br>
 Application of network design planning, address assignment, VLAN, NAT-PT address translation, routing protocol, <br>
 PIM-IGMP Multicast Protocol, SNMP Network Management, ACL Access Control and IPv6 technology <br>
 Ensure the reliability of the network through device and routing backup, partially realize the design of the network </center><br>
 
-<center>2017.01 &nbsp;&nbsp;&nbsp;&nbsp; Implementation of the extended C0 grammar programming language’s compiler and interpreter <br>
+<center>Implementation of the extended C0 grammar programming language’s compiler and interpreter <br>
 Subject Source : Curriculum Design of Fundamentals of Compiling <br>
 Designed and implemented on C++ and Visual Studio <br>
 The compiler has been subjected to stress testing: functional implementation, stack depth, complex calls, et al. </center><br>
 
-<center>2016.01 &nbsp;&nbsp;&nbsp;&nbsp; Design and implementation of the Microprocessor without Interlocked Piped Stages <br>
+<center>Design and implementation of the Microprocessor without Interlocked Piped Stages <br>
 Subject Source : Curriculum Design of Principles of Computer Organization <br>
 Architecture designed in Logisim, implemented in Xilinx ISE with Verilog HDL <br>
 Core technologies: the design of delay slot, the processing of instruction pipeline </center>
 
 ## <center> Other Professional Practice </center>
 
-<center>2019.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Machine Learning <br>
+<center>2019.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Machine Learning <br>
 <a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3</a><br></center>
 
-<center>2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Undergraduate Graduation Project <br>
+<center>2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Undergraduate Graduation Project <br>
 Research of gait identification based on Generative Adversarial Networks <br></center>
 
-<center>2017.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curriculum Design of Principle of Database <br>
+<center>2017.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curriculum Design of Principle of Database <br>
 Realization of online cinema booking system website on WAMP Server <br></center>
 
-<center>2016.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Object-Oriented Programming <br>
+<center>2016.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Object-Oriented Programming <br>
 Design of urban taxi dispatching system based on Java multi-threading </center>
 
 ## <center> Exchange </center>
@@ -165,7 +165,7 @@ Conducted academic exchange activities</center>
 ## <center> Social Practice </center>
 
 <center>2018.06 RNG Beijing Home Court --- 2018 LPL Summer Split <br>
-Served as the interior volunteer for the opening week of the RNG Beijing Home Court. <br>
+<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn23gQmzbVdoxbv*exsH6rmg4p7MZXaoX7AkuQindec*IS2M0BZVDtgMqFvcN911WUA!!/b&bo=qAZABvwIcAgRCVo!&rf=viewer_4">Served as the interior volunteer for the opening week of the RNG Beijing Home Court. </a><br>
 Mainly responsible for preparing the layout of arena and backstage, guide the audience, and keep order. </center><br>
 
 <center>2016.05 8th China Cloud Computing Conference <br>
