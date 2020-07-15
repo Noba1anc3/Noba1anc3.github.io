@@ -151,7 +151,7 @@ Core technologies: the design of delay slot, the processing of instruction pipel
 Research of gait identification based on Generative Adversarial Networks <br></center>
 
 <center>2017.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curriculum Design of Principle of Database <br>
-Realization of online cinema booking system website on WAMP Server <br></center>
+<a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn8aYsXOxmoC2rhQQauCmqa44mbjWqWr5cNFy6*uX2Rs92JltlEiwUFSNGIgRCkj*1A!!/b&bo=gAJcCaAFEBURCUk!&rf=viewer_4">Realization of online cinema booking system website on WAMP Server</a><br></center>
 
 <center>2016.05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment of Object-Oriented Programming <br>
 Design of urban taxi dispatching system based on Java multi-threading </center>
