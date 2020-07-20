@@ -97,7 +97,8 @@ VIDET, Shanghai, China <br>
 Algorithm Engineer <br>
 <a href="https://github.com/Noba1anc3/ArcFace">
 ①　Implementation of the real-time video stream face recognition system based on ArcFace </a><br>
-②　Research on semantic segmentation based on rules, neural network and machine learning <br>
+<a href="https://github.com/Noba1anc3/MFCN/wiki/Layout-Analysis">
+②　Research on semantic segmentation based on rules, neural network and machine learning </a><br>
 Based on Rules: a set of general rules for Information Extraction out of forms is designed and implemented independently. <br>
 The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>
 <a href="https://github.com/Noba1anc3/MFCN">
