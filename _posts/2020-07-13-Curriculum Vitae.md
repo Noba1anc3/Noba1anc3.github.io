@@ -116,7 +116,8 @@ Teaching Result : Realization of Handwriting Recognition GUI Based on KNN in Pyt
 
 <center>2017.11 - 2018.06 <br>
 Laboratory of Intelligent Recognition and Image Processing, BUAA, Beijing, China <br>
-Study on gait-recognition related papers, and accomplished the graduate thesis </center><br>
+<a href="https://github.com/Noba1anc3/-/wiki/Graduate-Thesis">
+Study on gait-recognition related papers, and accomplished the graduate thesis </a></center><br>
 
 <center>2017.03 - 2017.10 <br>
 the Institute of Advanced Computing Technology, BUAA, Beijing, China <br>
@@ -151,7 +152,7 @@ Core technologies: the design of delay slot, the processing of instruction pipel
 <a href="https://github.com/Noba1anc3/yolov3">Detection of dangerous goods in X-ray image based on YOLO-v3</a><br></center>
 
 <center>2018.06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Undergraduate Graduation Project <br>
-Research of gait identification based on Generative Adversarial Networks <br></center>
+<a href="https://github.com/Noba1anc3/-/wiki/Graduate-Thesis">Research of gait identification based on Generative Adversarial Networks</a><br></center>
 
 <center>2017.01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curriculum Design of Principle of Database <br>
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn8aYsXOxmoC2rhQQauCmqa44mbjWqWr5cNFy6*uX2Rs92JltlEiwUFSNGIgRCkj*1A!!/b&bo=gAJcCaAFEBURCUk!&rf=viewer_4">Realization of online cinema booking system website on WAMP Server</a><br></center>
