@@ -96,14 +96,14 @@ and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [
 VIDET, Shanghai, China <br>
 Algorithm Engineer <br>
 <a href="https://github.com/Noba1anc3/ArcFace">
-①　Implementation of the real-time video stream face recognition system based on ArcFace </a><br>
+①　Implementation of the real-time video stream face recognition system based on ArcFace</a><br>
 <a href="https://github.com/Noba1anc3/MFCN/wiki/Layout-Analysis">
-②　Research on semantic segmentation based on rules, neural network and machine learning </a><br>
+②　Research on semantic segmentation based on rules, neural network and machine learning</a><br>
 Based on Rules: a set of general rules for Information Extraction out of forms is designed and implemented independently. <br>
 The accuracy rate of key-value pairs on more than 100 customs declaration invoices reaches 98%. <br>
 <a href="https://github.com/Noba1anc3/MFCN">
-Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements, <br>
-training cost, model generalization, finetune for downstream tasks and parameter tuning. </a><br>
+Based on Neural Network: MFCNN based on BERT is reproduced. A series of experiments are carried out in terms of training set requirements,<br>
+training cost, model generalization, finetune for downstream tasks and parameter tuning.</a><br>
 Based on Machine Learning: the experiment of LightGBM Feature Engineering makes the F1 score of one shot learning exceed 0.9. </center><br>
 
 <center>2018.03 - 2018.06 <br>
