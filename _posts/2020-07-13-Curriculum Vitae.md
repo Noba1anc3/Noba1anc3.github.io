@@ -121,7 +121,8 @@ Study on gait-recognition related papers, and accomplished the graduate thesis <
 
 <center>2017.03 - 2017.10 <br>
 the Institute of Advanced Computing Technology, BUAA, Beijing, China <br>
-Cooperated with the Third Hospital of Peking University and developed the medical APP for COPD. <br>
+<a href="http://m.qpic.cn/psc?/V50VqFfH2A6OlZ2gWBDL0uxzNK4WmFgm/bqQfVz5yrrGYSXMvKr.cqSiGTcknQpeRj*mUrj7JO4GW9cnmaWtSWHzkVL9kVUM3VhM.6Oz4tyBjboq9ooHc0L0yaF04gmsLpsSkdomECrE!/b&bo=gwlABucMeggBCXs!&rf=viewer_4">
+Cooperated with the Third Hospital of Peking University and developed the medical APP for COPD. </a><br>
 Using Android studio, based on Java and its multithreading technology, <br>
 realized the functions of filling in and uploading the disease scale, shooting and uploading medical records, <br>
 interacting with doctors, recording the walking track, setting the medication alarm clock and so on. <br>
