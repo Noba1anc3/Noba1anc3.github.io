@@ -98,7 +98,7 @@ Algorithm Engineer <br>
 <a href="https://github.com/Noba1anc3/ArcFace">
 ①　Implementation of the real-time video stream face recognition system based on ArcFace</a><br>
 <a href="https://github.com/Noba1anc3/MFCN/wiki/Layout-Analysis">
-②　Research on semantic segmentation based on rules, neural network and machine learning</a><br>
+②　Research on semantic segmentation based on rules, neural network and machine learning</a></center><br>
 
 <center>2018.03 - 2018.06 <br>
 Secondary School Affiliated to Tsinghua University, Beijing, China<br>
