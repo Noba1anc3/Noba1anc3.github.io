@@ -4,9 +4,9 @@ layout: post
 
 ## <center>Basic Information</center>
 
-<center>Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Music       Research Interest : CV & OCR</center>
+<center>Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Music</center>
 <center>Mail : zxryhjp@yahoo.co.jp      Github : noba1anc3.github.io</center>
-
+<center>Research Interest : Document Analysis & Information Extraction</center>
 ## <center>Educational Background</center>
 
 <center>2019 - 2022</center>
