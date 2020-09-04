@@ -123,6 +123,13 @@ interacting with doctors, recording the walking track, setting the medication al
 It has been officially put into use. <br>
 Laying the foundation for the use of deep learning to study COPD in the laboratory. </center>
 
+## <center> Contribution to Publications </center>
+<center><a href="https://arxiv.org/pdf/2006.01038">DocBank: A Benchmark Dataset for Document Layout Analysis</a><br>
+Based on the previous attempt of making large sacle dataset automatically based on PDFMiner by Publaynet. I coorporated with the first author of DocBank to <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">make a large-scale English academic paper semantic segmentation dataset based on PDFMiner</a> for the purpose of feasibility demonstration before DocBank.</center>
+ 
+<center><a href="https://arxiv.org/pdf/1912.13318">LayoutLM: Pre-training of Text and Layout for Document Image Understanding [KDD 2020]</a><br>
+Empirical conclusion and idea exchange with the first author of LayoutLM, <a href="https://github.com/Noba1anc3/Document-Analysis-Recognition/blob/master/LayoutLM:%20Pre-training%20of%20Text%20and%20Layout%20for%20Document%20Image%20Understanding.md">many ideas are proved to be effective and put into the implementation of LayoutLM.</a></center>
+
 ## <center> Core Professional Practice </center>
 
 <center>Design and reproduction of the network engineering project of No.2 Laboratory Building of Beihang Shahe Campus <br>
