@@ -74,6 +74,8 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 <center>2019.09 ~ <br>
 SKLSDE, BUAA, Beijing, China <br>
 Leader & Person In Charge <br>
+<a href="https://github.com/Noba1anc3/ext_layout_lm">
+① Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM [2020.08 - 2020.09]</a><br>
 <a href="https://github.com/Noba1anc3/trash_classify_competition">
 ①  Participate in 2020 Huawei Cloud Cup Shenzhen Open Data Appliance Innovation Competition [2020.06]</a><br>
 <a href="https://github.com/Noba1anc3/yolov3-tf2">
@@ -125,10 +127,14 @@ Laying the foundation for the use of deep learning to study COPD in the laborato
 
 ## <center> Contribution to Publications </center>
 <center><a href="https://arxiv.org/pdf/2006.01038">DocBank: A Benchmark Dataset for Document Layout Analysis</a><br>
-Based on the previous attempt of making large sacle dataset automatically based on PDFMiner by Publaynet. I coorporated with the first author of DocBank to <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">make a large-scale English academic paper semantic segmentation dataset based on PDFMiner</a> for the purpose of feasibility demonstration before DocBank.</center>
+In view of the successful of making large sacle dataset automatically based on PDFMiner by Publaynet,<br>
+I coorporated with the first author and <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">made a English academic paper semantic segmentation dataset based on PDFMiner,</a><br>
+for the purpose of feasibility demonstration of making large-scale academic paper semseg dataset based on PDFMiner.</center><br>
  
 <center><a href="https://arxiv.org/pdf/1912.13318">LayoutLM: Pre-training of Text and Layout for Document Image Understanding [KDD 2020]</a><br>
-Empirical conclusion and idea exchange with the first author of LayoutLM, <a href="https://github.com/Noba1anc3/Document-Analysis-Recognition/blob/master/LayoutLM:%20Pre-training%20of%20Text%20and%20Layout%20for%20Document%20Image%20Understanding.md">many ideas are proved to be effective and put into the implementation of LayoutLM.</a></center>
+Empirical conclusion and idea exchange with the first author of LayoutLM,<br>
+<a href="https://github.com/Noba1anc3/Document-Analysis-Recognition/blob/master/LayoutLM:%20Pre-training%20of%20Text%20and%20Layout%20for%20Document%20Image%20Understanding.md">
+Some ideas are proved to be effective and put into the implementation of LayoutLM.</a></center>
 
 ## <center> Core Professional Practice </center>
 
