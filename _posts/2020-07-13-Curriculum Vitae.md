@@ -71,7 +71,7 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 
 ## <center>Internship</center>
 <center>2020.09 ~ <br>
-IDC, Industrial Bank, Shanghai, China - Intelligent Strong Technology, Shenzhen, China <br>
+Industrial Bank IDC, Shanghai, China - Intelligent Strong Technology, Shenzhen, China <br>
 R&D Engineer <br>
 <a href="https://github.com/Noba1anc3/Direction_Classify">
 ① Make a generalized testing set for document text direction classification [2020.09]</a></center><br>
