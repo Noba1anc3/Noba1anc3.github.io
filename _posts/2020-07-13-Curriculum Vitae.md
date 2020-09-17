@@ -70,28 +70,33 @@ Java Senior Engineer Certificate, Issued by China Informatization Training Cente
 Spring League of BUAA, Raytheon College E-Sports League</center>
 
 ## <center>Internship</center>
+<center>2020.09 ~ <br>
+IDC, Industrial Bank, Shanghai, China - Intelligent Strong Technology, Shenzhen, China <br>
+R&D Engineer <br>
+<a href="https://github.com/Noba1anc3/Direction_Classify">
+① Make a generalized testing set for document text direction classification [2020.09]</a><br>
 
 <center>2019.09 ~ <br>
 SKLSDE, BUAA, Beijing, China <br>
 Leader & Person In Charge <br>
 <a href="https://github.com/Noba1anc3/ext_layout_lm">
-① Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM [2020.08 - 2020.09]</a><br>
+① Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM.<br> Make the Sentence-Level SG Customs Declaration Invoice Dataset and verify the successful of LayoutLM on sentence-level semantic feature [2020.08 - 2020.09]</a><br>
 <a href="https://github.com/Noba1anc3/trash_classify_competition">
-①  Participate in 2020 Huawei Cloud Cup Shenzhen Open Data Appliance Innovation Competition [2020.06]</a><br>
+②  Participate in 2020 Huawei Cloud Cup Shenzhen Open Data Appliance Innovation Competition [2020.06]</a><br>
 <a href="https://github.com/Noba1anc3/yolov3-tf2">
-②  Implementation of Yolo-v3 based on Tensorflow 2 [2020.05]</a><br>
+③  Implementation of Yolo-v3 based on Tensorflow 2 [2020.05]</a><br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
-③  Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
+④  Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/CH-NER">
-④  Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
+⑤  Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">
-⑤  Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
+⑥  Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
 <a href="https://github.com/Noba1anc3/Publaynet">
 and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">
-⑥  Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
+⑦  Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">
-⑦  Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
+⑧  Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
  and won the third and second prize of algorithm track. [2019] </a></center><br>
 
 <center>2019.05 - 2019.08 <br>
