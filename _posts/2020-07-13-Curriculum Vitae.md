@@ -73,12 +73,12 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 <center>2020.09 ~ <br>
 Intelligent Strong Technology, Shenzhen, China - Industrial Bank IDC, Shanghai, China<br>
 Research & Development Engineer <br>
-<a href="https://github.com/Noba1anc3/Direction_Classify">
+<a href="https://github.com/Noba1anc3/Table_Structure_Analysis">
 ① Table Structure Analysis [2020.10 - 2020.11]</a></center><br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/Tesing%20Set.md">
-② Make a generalized testing set for document text direction classification task,
+② Make a generalized testing set with 3600 images for document text direction classification task,<br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E5%87%86%E7%A1%AE%E7%8E%87%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
- by using PaddleOCR and a series of otimization scheme, successfully pushed the accuracy of testing set from 
+ based on PaddleOCR and otimization scheme, successfully pushed the accuracy of testing set from 
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/zhenyang_version/README.md">
 64.3%
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E6%97%B6%E9%97%B4%E6%B6%88%E8%80%97%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
