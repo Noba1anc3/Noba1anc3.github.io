@@ -76,13 +76,13 @@ Research & Development Engineer <br>
 <a href="https://github.com/Noba1anc3/Table_Structure_Analysis">
 ① Table Structure Analysis [2020.10 - 2020.11]</a></center><br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/Tesing%20Set.md">
-② Make a generalized testing set with 3600 images for document text direction classification task,<br>
+② Make a generalized testing set with 3600 images for document text direction classification task,</a></center><br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E5%87%86%E7%A1%AE%E7%8E%87%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
- based on PaddleOCR and otimization scheme, successfully pushed the accuracy of testing set from 
+ based on PaddleOCR and otimization scheme, successfully pushed the accuracy of testing set from</a></center>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/zhenyang_version/README.md">
-64.3%
+ 64.3%</a></center>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E6%97%B6%E9%97%B4%E6%B6%88%E8%80%97%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
-to 99.7% with 74ms per image.[2020.09 - 2020.10]</a></center><br>
+to 99.7% with 74ms per image. [2020.09 - 2020.10]</a></center><br>
 
 <center>2019.09 ~ <br>
 SKLSDE, BUAA, Beijing, China <br>
