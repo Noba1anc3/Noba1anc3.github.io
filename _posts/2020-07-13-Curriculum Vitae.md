@@ -28,7 +28,7 @@ layout: post
 <center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn6TyffVgPNmGcjIvjOKMuxcAKJ1BZrBzbZJm2HeN8VaripjDuYYmI8vvcL1pckOBsQ!!/b&bo=VAROBlQETgYRCT4!&rf=viewer_4">CET-6</a> / CET-4 (2016 / 2015) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score : 386/ 490</center>
 
 <center><a href="http://www.github.com/noba1anc3/en_news">
-Have been intensive reading EN news for 600 days</a></center>
+Have been intensive reading EN news for 700 days</a></center>
 
 ### <center>Japanese</center>
 
