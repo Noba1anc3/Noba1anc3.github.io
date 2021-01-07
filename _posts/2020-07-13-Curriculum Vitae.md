@@ -28,11 +28,12 @@ layout: post
 <center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn6TyffVgPNmGcjIvjOKMuxcAKJ1BZrBzbZJm2HeN8VaripjDuYYmI8vvcL1pckOBsQ!!/b&bo=VAROBlQETgYRCT4!&rf=viewer_4">CET-6</a> / CET-4 (2016 / 2015) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score : 386/ 490</center>
 
 <center><a href="http://www.github.com/noba1anc3/en_news">
-Have been intensive reading EN news for 700 days</a></center>
+Have been intensive reading EN news for about 800 days</a></center>
+
 
 ### <center>Japanese</center>
 
-<center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JLPT-N2</center>
+<center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JLPT-N4</center>
 
 ## <center>Management</center>
 
@@ -70,21 +71,19 @@ Java Senior Engineer Certificate, Issued by China Informatization Training Cente
 Spring League of BUAA, Raytheon College E-Sports League</center>
 
 ## <center>Internship</center>
-<center>2020.09 ~ <br>
-Intelligent Strong Technology, Shenzhen, China - Industrial Bank IDC, Shanghai, China<br>
+<center>2020.09 - 2020.11 <br>
+SKLSDE, BUAA, Beijing, China - Industrial Bank IDC, Shanghai, China<br>
 Research & Development Engineer <br>
-<a href="https://github.com/Noba1anc3/Table_Structure_Analysis">
-① Table Structure Analysis [2020.10 - 2020.11]</a><br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/Tesing%20Set.md">
-② Make a generalized testing set with 3600 images for document text direction classification task</a>,<br>
+① Make a generalized testing set with 3600 images for document text direction classification task</a>,<br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E5%87%86%E7%A1%AE%E7%8E%87%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
  based on PaddleOCR and otimization scheme, successfully pushed the accuracy of testing set from </a>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/zhenyang_version/README.md">
 64.3% </a>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E6%97%B6%E9%97%B4%E6%B6%88%E8%80%97%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
-to 99.7% with 74ms per image. [2020.09 - 2020.10]</a></center><br>
+to 99.7% with 74ms per image. </a></center><br>
 
-<center>2019.09 ~ <br>
+<center>2019.09 - 2020.09 <br>
 SKLSDE, BUAA, Beijing, China <br>
 Leader & Person In Charge <br>
 <a href="https://github.com/Noba1anc3/ext_layout_lm">
@@ -106,6 +105,7 @@ and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">
 ⑧  Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
  and won the third and second prize of algorithm track. [2019] </a></center><br>
+
 
 <center>2019.05 - 2019.08 <br>
 VIDET, Shanghai, China <br>
@@ -144,12 +144,12 @@ Laying the foundation for the use of deep learning to study COPD in the laborato
 In view of the successful of making large sacle dataset automatically based on PDFMiner by Publaynet,<br>
 I coorporated with the first author and <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">made a English academic paper semantic segmentation dataset based on PDFMiner,</a><br>
 for the purpose of feasibility demonstration of making large-scale academic paper semseg dataset based on PDFMiner.</center><br>
- <!---
+
 <center><a href="https://arxiv.org/pdf/1912.13318">LayoutLM: Pre-training of Text and Layout for Document Image Understanding [KDD 2020]</a><br>
 Empirical conclusion and idea exchange with the first author of LayoutLM,<br>
 <a href="https://github.com/Noba1anc3/Document-Analysis-Recognition/blob/master/LayoutLM:%20Pre-training%20of%20Text%20and%20Layout%20for%20Document%20Image%20Understanding.md">
 Some ideas are proved to be effective and put into the implementation of LayoutLM.</a></center>
---->
+
 
 ## <center> Core Professional Practice </center>
 
