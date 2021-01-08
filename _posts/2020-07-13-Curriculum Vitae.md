@@ -83,11 +83,11 @@ Research & Development<br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E6%97%B6%E9%97%B4%E6%B6%88%E8%80%97%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
 to 99.7% with 74ms per image. [2020.10 - 2020.11]</a><br>
 <a href="https://github.com/Noba1anc3/ext_layout_lm">
-② Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM.<br> Make the Sentence-Level SG Customs Declaration Invoice Dataset and verify the successful of LayoutLM on sentence-level semantic feature [2020.08 - 2020.09]</a><br></center>
+② Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM.<br> Make the Sentence-Level SG Customs Declaration Invoice Dataset and verify the successful of LayoutLM on sentence-level semantic feature [2020.08 - 2020.09]</a><br></center><br>
 
 
 
-<center>2019.09 - 2020.09 <br>
+<center>2019.09 - 2020.07 <br>
 SKLSDE, BUAA, Beijing, China <br>
 Leader & Person In Charge <br>
 <a href="https://github.com/Noba1anc3/trash_classify_competition">
