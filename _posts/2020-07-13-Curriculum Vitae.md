@@ -71,9 +71,9 @@ Java Senior Engineer Certificate, Issued by China Informatization Training Cente
 Spring League of BUAA, Raytheon College E-Sports League</center>
 
 ## <center>Internship</center>
-<center>2020.09 - 2020.11 <br>
+<center>2020.08 - 2020.11 <br>
 SKLSDE, BUAA, Beijing, China - Industrial Bank IDC, Shanghai, China<br>
-Research & Development Engineer <br>
+Research & Development<br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/Tesing%20Set.md">
 ① Make a generalized testing set with 3600 images for document text direction classification task</a>,<br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E5%87%86%E7%A1%AE%E7%8E%87%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
@@ -81,30 +81,33 @@ Research & Development Engineer <br>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/zhenyang_version/README.md">
 64.3% </a>
 <a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E6%97%B6%E9%97%B4%E6%B6%88%E8%80%97%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
-to 99.7% with 74ms per image. </a></center><br>
+to 99.7% with 74ms per image. [2020.10 - 2020.11]</a><br>
+<a href="https://github.com/Noba1anc3/ext_layout_lm">
+② Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM.<br> Make the Sentence-Level SG Customs Declaration Invoice Dataset and verify the successful of LayoutLM on sentence-level semantic feature [2020.08 - 2020.09]</a><br></center>
+
+
 
 <center>2019.09 - 2020.09 <br>
 SKLSDE, BUAA, Beijing, China <br>
 Leader & Person In Charge <br>
-<a href="https://github.com/Noba1anc3/ext_layout_lm">
-① Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM.<br> Make the Sentence-Level SG Customs Declaration Invoice Dataset and verify the successful of LayoutLM on sentence-level semantic feature [2020.08 - 2020.09]</a><br>
 <a href="https://github.com/Noba1anc3/trash_classify_competition">
-②  Participate in 2020 Huawei Cloud Cup Shenzhen Open Data Appliance Innovation Competition [2020.06]</a><br>
+①  Participate in 2020 Huawei Cloud Cup Shenzhen Open Data Appliance Innovation Competition [2020.06]</a><br>
 <a href="https://github.com/Noba1anc3/yolov3-tf2">
-③  Implementation of Yolo-v3 based on Tensorflow 2 [2020.05]</a><br>
+②  Implementation of Yolo-v3 based on Tensorflow 2 [2020.05]</a><br>
 <a href="https://github.com/Noba1anc3/Faster-RCNN-TensorFlow-2">
-④  Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
+③  Implementation of ResNet-based Faster R-CNN based on TensorFlow 2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/CH-NER">
-⑤  Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
+④  Implementation of Chinese Named Entity Recognition based on Bi-LSTM + CRF [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Company-Articles-PDF-SemSeg">
-⑥  Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
+⑤  Make a semantic segmentation dataset of articles of association based on PDFMiner</a>,<br> 
 <a href="https://github.com/Noba1anc3/Publaynet">
 and finetune pretrained model of Publaynet based on Faster R-CNN in Detectron2 [2020.04]</a><br>
 <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">
-⑦  Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
+⑥  Semantic Segmentation of English Academic Paper based on PDFMiner [2020.02 - 2020.03]</a><br>
 <a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn64qNm51rLgAai7.Wdd69I4jNTfeUmBiRviOWdww2JZxEQJ2WmRkpij4t73uFKp6Vw!!/b&bo=CwtABlQM.gYDCc4!&rf=viewer_4">
-⑧  Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
+⑦  Together with the team of BUAA, we participated in the "Zhihui Cup" 2019 national university financial technology innovation competition - <br> Application Research of Artificial Intelligence Multimedia Recognition and Understanding Technology in the Financial Field,<br>
  and won the third and second prize of algorithm track. [2019] </a></center><br>
+
 
 
 <center>2019.05 - 2019.08 <br>
@@ -143,7 +146,8 @@ Laying the foundation for the use of deep learning to study COPD in the laborato
 <center><a href="https://arxiv.org/pdf/2006.01038">DocBank: A Benchmark Dataset for Document Layout Analysis</a><br>
 In view of the successful of making large sacle dataset automatically based on PDFMiner by Publaynet,<br>
 I coorporated with the first author and <a href="https://github.com/Noba1anc3/Academic-Paper-PDF-SemSeg">made a English academic paper semantic segmentation dataset based on PDFMiner,</a><br>
-for the purpose of feasibility demonstration of making large-scale academic paper semseg dataset based on PDFMiner.</center><br>
+for the purpose of feasibility demonstration of large-scale academic paper semseg dataset making based on PDFMiner.</center><br>
+
 
 <center><a href="https://arxiv.org/pdf/1912.13318">LayoutLM: Pre-training of Text and Layout for Document Image Understanding [KDD 2020]</a><br>
 Empirical conclusion and idea exchange with the first author of LayoutLM,<br>
