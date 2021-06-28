@@ -73,16 +73,21 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 TikTok, Search Recommendation, ByteDance, Beijing, China<br>
 Algorithm Engineer<br>
 ①  Toutiao: Read and learn the architecture code and business logic of recommendation system of Toutiao<br>
-②  Realization the i18n query mining project; Realize the day-level and hour-level, on-site hot stickers and<br>
-music posting and off-site hot recalls; Access correction and word-cut services for preprocess; <br>
-Word embedding is used to eliminate duplication, sudden increment level and TnS offline security conclusion are used to filter;<br>
-The post-processing access to NER service, and creatively designed the Search-After-Search mining to get the query context;<br>
-A comprehensive Grafana monitoring has been built.
+②  Realization the i18n query mining project; Realize the day and hour-level, on-site hot stickers and music posting recalls;<br>
+Access correction and word-cut services for preprocess; Word embedding is used to eliminate duplication,<br>
+sudden increment level and TnS offline security conclusion are used to filter; The post-processing access to NER service,<br>
+and creatively designed the Search-After-Search mining to get the query context; A comprehensive Grafana monitoring has been built.
 <br>
-③  It has covered Britain, US, Russia, Japan, South Korea and Southeast Asia. 1000 queries are mined and send to audit and Kafka message queues every day, also been broadcast to overseas operators through lark robot; Through the synchronization of the Redis in the east United States and Singapore, the problem of repeated submission for audit is solved; The proportion of on-site queries deployed by overseas operators increased significantly, with 10% ~ 50% in Britain, 20% ~ 70% in Japan and 30% ~ 50% in Russia.
+③  It has covered Britain, US, Russia, Japan, South Korea and Southeast Asia. <br>
+ 1000 queries are mined and send to audit and Kafka message queues every day, also been broadcast to overseas operators through lark robot; <br>
+ Through the synchronization of the Redis in the east United States and Singapore, the problem of repeated submission for audit is solved; <br>
+ The proportion of on-site queries deployed by overseas operators increased significantly, with 10% ~ 50% in Britain, 20% ~ 70% in Japan and 30% ~ 50% in Russia.
 <br>
-④  Build audit queues, its interface displays query information and provides four kinds of audit operations: timeliness annotation, postpone, word-change and rejection; Implement callback methods to write the audit results to Kafka, SQL, Redis and Tbase, and write to forward index through the offline data flow framework.<br>
-⑤  Construct a Hive table for audit result and synchronize it to Clickhouse table, the historical audit data are recharged in a daily basis, so that the number of online candidates will not be reduced due to the expiration of timeliness; Based on the approved and rejected query, the analysis of its sudden increment and forward index fields is carried out to improve the mining effect; Audit situation analysis dashboard is built based on VBA, which can comprehensively monitor into the audit situation, online available words account for 35%.<br> 
+④  Build audit queues, its interface displays query information and provides four kinds of audit operations: timeliness annotation, postpone, word-change and rejection;<br> Implement callback methods to write the audit results to Kafka, SQL, Redis and Tbase, and write to forward index through the offline data flow framework.<br>
+⑤  Construct a Hive table for audit result and synchronize it to Clickhouse table, the historical audit data are recharged in a daily basis,<br>
+so that the number of online candidates will not be reduced due to the expiration of timeliness; <br>
+Based on the approved and rejected query, the analysis of its sudden increment and forward index fields is carried out to improve the mining effect; 
+Audit situation analysis dashboard is built based on VBA, which can comprehensively monitor into the audit situation, online available words account for 35%.<br> 
 
 
 <center>2020.08 - 2020.11 <br>
