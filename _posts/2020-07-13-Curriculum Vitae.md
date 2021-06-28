@@ -7,6 +7,7 @@ layout: post
 <center>Name : Xuanrui Zhang      Hobbies : Reading, Aviation, Rock N'Roll</center>
 <center>Mail : zxryhjp@yahoo.co.jp      Github : noba1anc3.github.io</center>
 <center>Research Interest : Document Analysis & Information Extraction</center>
+
 ## <center>Educational Background</center>
 
 <center>2019 - 2022</center>
@@ -25,15 +26,11 @@ layout: post
 
 ### <center>English</center>
 
-<center><a href="http://m.qpic.cn/psc?/fef49446-40e0-48c4-adcc-654c5015022c/90yfO.8bOadXEE4MiHsPn6TyffVgPNmGcjIvjOKMuxcAKJ1BZrBzbZJm2HeN8VaripjDuYYmI8vvcL1pckOBsQ!!/b&bo=VAROBlQETgYRCT4!&rf=viewer_4">CET-6</a> / CET-4 (2020, 2016 / 2015) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score : NaN, 386 / 490</center>
-
-<center><a href="http://www.github.com/noba1anc3/en_news">
-Have been intensive reading EN news for about 800 days</a></center>
-
+<center><a href="http://r.photo.store.qq.com/psc?/V50VqFfH2A6OlZ2gWBDL0uxzNK4WmFgm/TmEUgtj9EK6.7V8ajmQrEMZhgRYfT8xcSZoeI4REwDVrT1FTF4ZXu1Ot09k33FAxZ8Y9hnHxawoCwgMjpkx3cWV6pBxwQVoWzIjUZ43xfPQ!/r">CET-6</a> / CET-4 (2020 / 2015) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score : 507 / 490</center>
 
 ### <center>Japanese</center>
 
-<center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JLPT-N4</center>
+<center>Basic Communication skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JLPT-N2</center>
 
 ## <center>Management</center>
 
@@ -43,8 +40,8 @@ SemSeg Group of SKLSDE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 <center> 2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 Class No.140613 of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class Committee / Minister of Organization</center>
 
-<center> 2014.09 – 2018.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-ACG Club of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Live Event Consultant</center>
+<center> 2014.09 ~  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ACG Club of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Permanent Live Event Consultant</center>
 
 <center>2014.09 – 2016.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 eSports Club of BUAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; School Team Member / Operation and Maintenance</center>
@@ -71,6 +68,23 @@ Java Senior Engineer Certificate, Issued by China Informatization Training Cente
 Spring League of BUAA, Raytheon College E-Sports League</center>
 
 ## <center>Internship</center>
+
+<center>2021.03 - 2021.06 <br>
+TikTok, Search Recommendation, ByteDance, Beijing, China<br>
+Algorithm Engineer<br>
+<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/Tesing%20Set.md">
+① Make a generalized testing set with 3600 images for document text direction classification task</a>,<br>
+<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E5%87%86%E7%A1%AE%E7%8E%87%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
+ based on PaddleOCR and otimization scheme, successfully pushed the accuracy of testing set from </a>
+<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/zhenyang_version/README.md">
+64.3% </a>
+<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E6%97%B6%E9%97%B4%E6%B6%88%E8%80%97%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
+to 99.7% with 74ms per image. [2020.10 - 2020.11]</a><br>
+<a href="https://github.com/Noba1anc3/ext_layout_lm">
+② Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM.<br> Make the Sentence-Level SG Customs Declaration Invoice Dataset and verify the successful of LayoutLM on sentence-level semantic feature [2020.08 - 2020.09]</a><br></center><br>
+
+
+
 <center>2020.08 - 2020.11 <br>
 SKLSDE, BUAA, Beijing, China - Industrial Bank IDC, Shanghai, China<br>
 Research & Development<br>
