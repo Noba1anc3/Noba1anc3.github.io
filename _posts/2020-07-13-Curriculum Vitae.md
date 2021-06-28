@@ -72,17 +72,13 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 <center>2021.03 - 2021.06 <br>
 TikTok, Search Recommendation, ByteDance, Beijing, China<br>
 Algorithm Engineer<br>
-<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/Tesing%20Set.md">
-① Make a generalized testing set with 3600 images for document text direction classification task</a>,<br>
-<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E5%87%86%E7%A1%AE%E7%8E%87%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
- based on PaddleOCR and otimization scheme, successfully pushed the accuracy of testing set from </a>
-<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/zhenyang_version/README.md">
-64.3% </a>
-<a href="https://github.com/Noba1anc3/Direction_Classify/blob/master/PaddleOCR/%E6%97%B6%E9%97%B4%E6%B6%88%E8%80%97%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96%E7%BB%93%E6%9E%9C%E6%96%87%E6%A1%A3.md">
-to 99.7% with 74ms per image. [2020.10 - 2020.11]</a><br>
-<a href="https://github.com/Noba1anc3/ext_layout_lm">
-② Experiment on the architecture of LayoutLM and break the then SOTA score of semseg task on FUNSD dataset made by LayoutLM.<br> Make the Sentence-Level SG Customs Declaration Invoice Dataset and verify the successful of LayoutLM on sentence-level semantic feature [2020.08 - 2020.09]</a><br></center><br>
-
+①  Toutiao: Read and learn the architecture code and business logic of recommendation system of Toutiao<br>
+②  Realization the i18n query mining project; Realize the day-level and hour-level, on-site hot stickers and music posting and off-site hot recalls; Access correction and word-cut services for preprocess; Word embedding is used to eliminate duplication, sudden increment level and TnS offline security conclusion are used to filter; The post-processing access to NER service, and creatively designed the Search-After-Search mining to get the query context; A comprehensive Grafana monitoring has been built.
+<br>
+③  It has covered Britain, US, Russia, Japan, South Korea and Southeast Asia. 1000 queries are mined and send to audit and Kafka message queues every day, also been broadcast to overseas operators through lark robot; Through the synchronization of the Redis in the east United States and Singapore, the problem of repeated submission for audit is solved; The proportion of on-site queries deployed by overseas operators increased significantly, with 10% ~ 50% in Britain, 20% ~ 70% in Japan and 30% ~ 50% in Russia.
+<br>
+④  Build audit queues, its interface displays query information and provides four kinds of audit operations: timeliness annotation, postpone, word-change and rejection; Implement callback methods to write the audit results to Kafka, SQL, Redis and Tbase, and write to forward index through the offline data flow framework.<br>
+⑤  Construct a Hive table for audit result and synchronize it to Clickhouse table, the historical audit data are recharged in a daily basis, so that the number of online candidates will not be reduced due to the expiration of timeliness; Based on the approved and rejected query, the analysis of its sudden increment and forward index fields is carried out to improve the mining effect; Audit situation analysis dashboard is built based on VBA, which can comprehensively monitor into the audit situation, online available words account for 35%.<br> 
 
 
 <center>2020.08 - 2020.11 <br>
