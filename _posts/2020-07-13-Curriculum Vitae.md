@@ -88,8 +88,14 @@ and creatively designed the Search-After-Search mining to get the query context;
 so that the number of online candidates will not be reduced due to the expiration of timeliness; <br>
 Based on the approved and rejected query, the analysis of its sudden increment and forward index fields is carried out to improve the mining effect; <br> 
 Audit situation analysis dashboard is built based on VBA, which can comprehensively monitor into the audit situation, online available words account for 35%.<br> 
+⑥  Realize the recall of time-sensitive query with semantic de-duplication and scattering mechanism, modify the service configuration<br>
+and DAG topology to make it a recall for online gs and search-bar scenes; Carried out a week of 50% traffic AB Experiment:<br>
+click pv +16.66%, ctr +16.84% for gs. click pv +3.42%, ctr + 0.11% for search-bar. The experimental effect is significantly positive, and has been fully online.
+⑦  Realize the recall of QSE query, modify the service configuration and DAG topology to make it a recall for online rs and click recom scenes;<br>
+Carried out 3 days of 20% traffic AB Experiment: click pv +11.5%, ctr +10.6% for rs, click pv +1.43%, ctr +0.43% for search-bar.
+The experimental effect is significantly positive, and has been fully online.
 
-
+ 
 <center>2020.08 - 2020.11 <br>
 SKLSDE, BUAA, Beijing, China - Industrial Bank IDC, Shanghai, China<br>
 Research & Development<br>
