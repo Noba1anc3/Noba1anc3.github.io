@@ -92,8 +92,8 @@ Audit situation analysis dashboard is built based on VBA, which can comprehensiv
 and DAG topology to make it a recall for online gs and search-bar scenes; Carried out a week of 50% traffic AB Experiment:<br>
 click pv +16.66%, ctr +16.84% for gs. click pv +3.42%, ctr + 0.11% for search-bar. The experimental effect is significantly positive, and has been fully online.
 ⑦  Realize the recall of QSE query, modify the service configuration and DAG topology to make it a recall for online rs and click recom scenes;<br>
-Carried out 3 days of 20% traffic AB Experiment: click pv +11.5%, ctr +10.6% for rs, click pv +1.43%, ctr +0.43% for search-bar.
-The experimental effect is significantly positive, and has been fully online.
+Carried out 3 days of 20% traffic AB Experiment: click pv +11.5%, ctr +10.6% for rs, click pv +1.43%, ctr +0.43% for search-bar.<br>
+The experimental effect is significantly positive, and has been fully online.<br>
 
  
 <center>2020.08 - 2020.11 <br>
