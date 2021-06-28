@@ -86,7 +86,7 @@ and creatively designed the Search-After-Search mining to get the query context;
 ④  Build audit queues, its interface displays query information and provides four kinds of audit operations: timeliness annotation, postpone, word-change and rejection;<br> Implement callback methods to write the audit results to Kafka, SQL, Redis and Tbase, and write to forward index through the offline data flow framework.<br>
 ⑤  Construct a Hive table for audit result and synchronize it to Clickhouse table, the historical audit data are recharged in a daily basis,<br>
 so that the number of online candidates will not be reduced due to the expiration of timeliness; <br>
-Based on the approved and rejected query, the analysis of its sudden increment and forward index fields is carried out to improve the mining effect; 
+Based on the approved and rejected query, the analysis of its sudden increment and forward index fields is carried out to improve the mining effect; <br> 
 Audit situation analysis dashboard is built based on VBA, which can comprehensively monitor into the audit situation, online available words account for 35%.<br> 
 
 
