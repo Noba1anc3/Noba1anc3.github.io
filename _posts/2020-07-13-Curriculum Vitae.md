@@ -73,7 +73,11 @@ Spring League of BUAA, Raytheon College E-Sports League</center>
 TikTok, Search Recommendation, ByteDance, Beijing, China<br>
 Algorithm Engineer<br>
 ①  Toutiao: Read and learn the architecture code and business logic of recommendation system of Toutiao<br>
-②  Realization the i18n query mining project; Realize the day-level and hour-level, on-site hot stickers and music posting and off-site hot recalls; Access correction and word-cut services for preprocess; Word embedding is used to eliminate duplication, sudden increment level and TnS offline security conclusion are used to filter; The post-processing access to NER service, and creatively designed the Search-After-Search mining to get the query context; A comprehensive Grafana monitoring has been built.
+②  Realization the i18n query mining project; Realize the day-level and hour-level, on-site hot stickers and<br>
+music posting and off-site hot recalls; Access correction and word-cut services for preprocess; <br>
+Word embedding is used to eliminate duplication, sudden increment level and TnS offline security conclusion are used to filter;<br>
+The post-processing access to NER service, and creatively designed the Search-After-Search mining to get the query context;<br>
+A comprehensive Grafana monitoring has been built.
 <br>
 ③  It has covered Britain, US, Russia, Japan, South Korea and Southeast Asia. 1000 queries are mined and send to audit and Kafka message queues every day, also been broadcast to overseas operators through lark robot; Through the synchronization of the Redis in the east United States and Singapore, the problem of repeated submission for audit is solved; The proportion of on-site queries deployed by overseas operators increased significantly, with 10% ~ 50% in Britain, 20% ~ 70% in Japan and 30% ~ 50% in Russia.
 <br>
